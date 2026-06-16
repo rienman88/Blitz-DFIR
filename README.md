@@ -10,8 +10,8 @@
 | Try it out | [`09_TRY_IT_OUT_INSTRUCTIONS.md`](submission/packet/09_TRY_IT_OUT_INSTRUCTIONS.md) |
 | Feature description | [Overview](#overview) |
 | Demonstration video | [YouTube — Blitz DFIR Demo 2026](https://www.youtube.com/watch?v=KVRA7pNhdnU&t=93s) |
-| Architecture diagrams | [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) |
-| Datasets | [`docs/DATASETS.md`](docs/DATASETS.md) |
+| Architecture diagrams | [`This file`](https://github.com/rienman88/Blitz-DFIR/edit/main/README.md)
+| Datasets | [`Combined run of Rocba Memory and E01` |
 | Blitz-DFIR-Results | [`findings, audit, reports`](https://github.com/rienman88/Blitz-DFIR-Results/tree/main) |
 | Investigation conclusion | [`01_INVESTIGATION_CONCLUSION.md`](submission/packet/01_INVESTIGATION_CONCLUSION.md) |
 | Run summary | [`02_RUN_SUMMARY_COMPACT.json`](submission/packet/02_RUN_SUMMARY_COMPACT.json) |
