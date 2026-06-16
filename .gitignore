@@ -1,16 +1,95 @@
+# ============================================================
+# Blitz DFIR .gitignore
+# ============================================================
+
+# ----- Python -----
 .env
 .venv/
 .deps/
-test_tmp/
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
 .pytest_cache/
 .ruff_cache/
 .mypy_cache/
-*.pyc
-local/
-private/
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ----- Secrets / environment -----
 *.local.env
 *.private.env
+*.private.yaml
+*.private.json
+*.secret
+*.key
+llm_api_key*
+
+# ----- Dev / test artifacts -----
+test_tmp/
+local/
+private/
+
+# ----- DFIR evidence files (never commit raw evidence) -----
+*.E01
+*.Ex01
+*.L01
+*.Lx01
+*.dd
+*.img
+*.iso
+*.vmdk
+*.vhd
+*.vhdx
+*.raw
+*.mem
+*.vmem
+*.dmp
+*.mdmp
+*.hpak
+*.lime
+*.pcap
+*.pcapng
+*.cap
+*.evtx
+*.evt
+*.plaso
+*.csv.gz
+evidence*.zip
+
+# ----- Large generated case output (>100 MB risk) -----
+findings/evidence_maturity.json
+findings/event_store.sqlite
+reports/report.json
+audit/*.ndjson
+*.ndjson
+
+# ----- SQLite databases -----
+*.sqlite
+*.sqlite3
+*.db
+
+# ----- Log files -----
+*.log
+*.stderr.txt
+*.stdout.txt
+launcher.log
+
+# ----- Volatility symbols cache -----
+volatility_symbols/
+*.json.gz
+
+# ----- Case session / run data -----
+cases/
+evidence/
+.blitz_sessions/
+Blitz_DFIR_Proof/
+proof_exports/
+extracted_review/
+
+# ----- Output directories (keep stubs, not content) -----
 output/*
 !output/.gitkeep
 !output/reports/
@@ -21,15 +100,19 @@ output/*
 !output/findings/.gitkeep
 !output/timelines/
 !output/timelines/.gitkeep
-.blitz_sessions/
-Blitz_DFIR_Proof/
-proof_exports/
-extracted_review/
-cases/
-evidence/
-*.E01
-*.dd
-*.raw
-*.pcap
-*.pcapng
-*.plaso
+
+# ----- OS junk -----
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+
+# ----- IDEs -----
+.vscode/
+.idea/
+*.code-workspace
+
+# ----- Node -----
+node_modules/
