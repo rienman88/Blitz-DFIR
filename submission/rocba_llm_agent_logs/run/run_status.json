@@ -1,0 +1,16 @@
+{
+  "analysis_exit_code": 0,
+  "case_id": "BLITZ-ROCBA-MEMORY-E01",
+  "message": "Combined memory plus E01 analysis completed.",
+  "phase": "analysis_completed",
+  "postrun_checks": "NOT_CONFIGURED",
+  "postrun_checks_enabled": false,
+  "postrun_checks_reason": "combined memory plus E01 runner has no separate postrun QA phase; analysis validation, coverage, reporting, and artifact hashing complete inside the Blitz pipeline.",
+  "raw_evidence_mode": "external_absolute_paths_no_copy",
+  "run_id": "20260615T070127Z_rocba_memory_e01_ollama",
+  "run_root": "/cases/BLITZ-ROCBA-MEMORY-E01/analysis/runs/20260615T070127Z_rocba_memory_e01_ollama",
+  "schema_version": "blitz-memory-e01-run-status.v2",
+  "session": "/cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34",
+  "status": "COMPLETED",
+  "updated_at_utc": "2026-06-15T08:28:52.381773Z"
+}

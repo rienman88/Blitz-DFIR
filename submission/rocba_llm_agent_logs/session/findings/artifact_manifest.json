@@ -1,0 +1,367 @@
+{
+  "artifact_count": 71,
+  "artifacts": [
+    {
+      "path": "audit/collated_audit.md",
+      "sha256": "f331ac243a9b5fc338f5d6f87671486b2797a236cecfb940a14347008fa9151a",
+      "size_bytes": 48255
+    },
+    {
+      "path": "audit/progress.json",
+      "sha256": "71659722d36dc909d54c3315c5af2b09af1bf1a5319251983dde1e1d0e42135e",
+      "size_bytes": 19690
+    },
+    {
+      "path": "audit/sess-20260615T073626Z-5118ee34.ndjson",
+      "sha256": "b311674339143857b2e7d0d4af11083c0c2ca14c317122be06fc1b6fa3e4ebbb",
+      "size_bytes": 66392
+    },
+    {
+      "path": "audit/session_state.json",
+      "sha256": "cf05f96fcb998a45768fffcbfd074d9709f52559401734a0c0680f7f5f375074",
+      "size_bytes": 709
+    },
+    {
+      "path": "findings/agent_trace.json",
+      "sha256": "d1e79bf1adc9f862f801e024df9bbe96b808b0bab6930786394ef1836a786928",
+      "size_bytes": 65144840
+    },
+    {
+      "path": "findings/attack_stage_timeline.json",
+      "sha256": "d18a4a3cf344d0d056d373f7bb941107b99e232bd0df82ce34781eefde26112c",
+      "size_bytes": 1262318
+    },
+    {
+      "path": "findings/batch_plan.json",
+      "sha256": "ccbeaac028e15ab2a2d824bdf0b8ce70d0e3d8d92959145009c4d0ad43e89398",
+      "size_bytes": 4754
+    },
+    {
+      "path": "findings/case_objective.json",
+      "sha256": "2c1263c16f2587765ebf73cb1038d66062f5e055b2378d6a78668cdd8e2720f9",
+      "size_bytes": 1218
+    },
+    {
+      "path": "findings/contradiction_analysis.json",
+      "sha256": "21cec0f6ce31cf095d739deed796caa775ce884e5aa6db3deb323909812726e2",
+      "size_bytes": 246
+    },
+    {
+      "path": "findings/correction_history.json",
+      "sha256": "38e2da7de3c7a12a81c460c0af86d1689e59c03384b25b1a7400b2c234e8533a",
+      "size_bytes": 2515
+    },
+    {
+      "path": "findings/coverage.json",
+      "sha256": "b272464dd4377ce07a96428660a4ec13b1950f3249af7e34b78b52a47a31f80f",
+      "size_bytes": 12470
+    },
+    {
+      "path": "findings/event_store.sqlite",
+      "sha256": "b75e0248e87076a8294ec47591c7b48461473e53f825baf0da38b34ac5a1d311",
+      "size_bytes": 1641930752
+    },
+    {
+      "path": "findings/evidence_inventory.json",
+      "sha256": "5dee4b686af3da31194e25ca150599c3f378b9d80b5829835194b201fce5c20f",
+      "size_bytes": 2165
+    },
+    {
+      "path": "findings/evidence_maturity.json",
+      "sha256": "66cbf46ac5f3dc8df65989de6e52d6c56ca05d89119b1483ae1f4ca008536711",
+      "size_bytes": 113708002
+    },
+    {
+      "path": "findings/evidence_triage.json",
+      "sha256": "b907d6c01467922d137eebbc2ec49b914825654b5329aa5195f71156cef3eb9d",
+      "size_bytes": 2179
+    },
+    {
+      "path": "findings/evidentiary_weighting.json",
+      "sha256": "acffd71b0391b2d387b04f0ea1a12efb66f87e180e587a546d7250a39ffdc359",
+      "size_bytes": 21208321
+    },
+    {
+      "path": "findings/full_accounting.json",
+      "sha256": "4d154b4bc6aab4448dca1ac2806dcecf31dc66da96adda71a1e7b8af0e8a31cf",
+      "size_bytes": 5816
+    },
+    {
+      "path": "findings/investigation_guidance.json",
+      "sha256": "7aa11def10ff312fb491b45cac4bf0ae112e2821bcf9c4609f009807ac04e4d6",
+      "size_bytes": 1358
+    },
+    {
+      "path": "findings/investigation_plan.json",
+      "sha256": "9cf55f07c995019eedbbb63ab9c640593a8b9b413757ac3adcd9366d23ea628d",
+      "size_bytes": 2000
+    },
+    {
+      "path": "findings/llm_report_verification.json",
+      "sha256": "0a837832539d9ac22de032ea3690273435364e1b3a53c5e38ae1275229280d92",
+      "size_bytes": 634
+    },
+    {
+      "path": "findings/normalized_events.json",
+      "sha256": "d0a9f088202af49af72b4f51e071f6653d4cf97dc38b22e78c6a8f2680459fa7",
+      "size_bytes": 16068532
+    },
+    {
+      "path": "findings/object_inventory.json",
+      "sha256": "1805accc232858edf11c572da179e15e0d97444c50b8b4fc04ce2a37a41cb5e7",
+      "size_bytes": 5464093
+    },
+    {
+      "path": "findings/overall_findings.md",
+      "sha256": "d417a715006ed9262dba82c6ebe0cfa3b67a460a22a0a916e36a29f0043e81a9",
+      "size_bytes": 8137752
+    },
+    {
+      "path": "findings/parser_results.json",
+      "sha256": "f514d1ce97d76d3bd0f6ff5c5e69a419e7af8e7957d2bc2fd9d5d527f6c05d26",
+      "size_bytes": 18992769
+    },
+    {
+      "path": "findings/recovery_plan.json",
+      "sha256": "51191dd0dfe665be415a30d05d462e7bf5b07754175e5f5ca2fdffb555a99cfe",
+      "size_bytes": 6120
+    },
+    {
+      "path": "findings/rocba-cdrive-e01.disk_triage.disk_triage.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "findings/rocba-cdrive-e01.disk_triage.disk_triage.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "findings/rocba-cdrive-e01.disk_triage.entries.jsonl",
+      "sha256": "095f7ce27742df891fb40a446db604cf5abd6e0b1b596ce33b4058778308e3b8",
+      "size_bytes": 557510406
+    },
+    {
+      "path": "findings/rocba-cdrive-e01.disk_triage.json",
+      "sha256": "9f9d2c6387d0f0ae26558b77ccadba2734655808e047279456395a4591ed4965",
+      "size_bytes": 522397
+    },
+    {
+      "path": "findings/rocba-memory.windows_cmdline.json",
+      "sha256": "a31fbdfbb2244ebe795a8d2f33b72b92909560f6625287bcd96e4bad3b47e9bf",
+      "size_bytes": 233163
+    },
+    {
+      "path": "findings/rocba-memory.windows_cmdline.volatility.stderr.txt",
+      "sha256": "42dff4c93e3122a9a5a7d8ecb64509fac9f4e731938c9ddcca00dd650dc0b09f",
+      "size_bytes": 30
+    },
+    {
+      "path": "findings/rocba-memory.windows_cmdline.volatility.stdout.txt",
+      "sha256": "a31fbdfbb2244ebe795a8d2f33b72b92909560f6625287bcd96e4bad3b47e9bf",
+      "size_bytes": 233163
+    },
+    {
+      "path": "findings/rocba-memory.windows_malfind.json",
+      "sha256": "ce6cc2a5675a8e1e2709c561fa497b673ef4062366663e07b67bfa4a44f85e79",
+      "size_bytes": 22595
+    },
+    {
+      "path": "findings/rocba-memory.windows_malfind.volatility.stderr.txt",
+      "sha256": "df834ef59681ae632e8cae6f47d3ed440978f39f933a9e52dfbda3194863025e",
+      "size_bytes": 801
+    },
+    {
+      "path": "findings/rocba-memory.windows_malfind.volatility.stdout.txt",
+      "sha256": "ce6cc2a5675a8e1e2709c561fa497b673ef4062366663e07b67bfa4a44f85e79",
+      "size_bytes": 22595
+    },
+    {
+      "path": "findings/rocba-memory.windows_netscan.json",
+      "sha256": "5c4ab3fb672801ef974297260456964b43ab7cbb0afcf923e14676c2b8a96e7c",
+      "size_bytes": 129268
+    },
+    {
+      "path": "findings/rocba-memory.windows_netscan.volatility.stderr.txt",
+      "sha256": "42dff4c93e3122a9a5a7d8ecb64509fac9f4e731938c9ddcca00dd650dc0b09f",
+      "size_bytes": 30
+    },
+    {
+      "path": "findings/rocba-memory.windows_netscan.volatility.stdout.txt",
+      "sha256": "5c4ab3fb672801ef974297260456964b43ab7cbb0afcf923e14676c2b8a96e7c",
+      "size_bytes": 129268
+    },
+    {
+      "path": "findings/rocba-memory.windows_pslist.json",
+      "sha256": "6cd531d1935f157abaef844df0f22370e2ecf0a76a7dee6dcfb711845dbbdf0e",
+      "size_bytes": 731476
+    },
+    {
+      "path": "findings/rocba-memory.windows_pslist.volatility.stderr.txt",
+      "sha256": "42dff4c93e3122a9a5a7d8ecb64509fac9f4e731938c9ddcca00dd650dc0b09f",
+      "size_bytes": 30
+    },
+    {
+      "path": "findings/rocba-memory.windows_pslist.volatility.stdout.txt",
+      "sha256": "6cd531d1935f157abaef844df0f22370e2ecf0a76a7dee6dcfb711845dbbdf0e",
+      "size_bytes": 731476
+    },
+    {
+      "path": "findings/rocba-memory.windows_psscan.json",
+      "sha256": "36cff5deb46df9d0389e641b50b1d5d2f3a8eeb955a7479885c3ad3c90831504",
+      "size_bytes": 740141
+    },
+    {
+      "path": "findings/rocba-memory.windows_psscan.volatility.stderr.txt",
+      "sha256": "42dff4c93e3122a9a5a7d8ecb64509fac9f4e731938c9ddcca00dd650dc0b09f",
+      "size_bytes": 30
+    },
+    {
+      "path": "findings/rocba-memory.windows_psscan.volatility.stdout.txt",
+      "sha256": "36cff5deb46df9d0389e641b50b1d5d2f3a8eeb955a7479885c3ad3c90831504",
+      "size_bytes": 740141
+    },
+    {
+      "path": "findings/rocba-memory.windows_pstree.json",
+      "sha256": "b4a3015295ce736f5eaa5e13a5c8407be7ba1a1da452e7e74bb7b1a233466ef1",
+      "size_bytes": 1176965
+    },
+    {
+      "path": "findings/rocba-memory.windows_pstree.volatility.stderr.txt",
+      "sha256": "42dff4c93e3122a9a5a7d8ecb64509fac9f4e731938c9ddcca00dd650dc0b09f",
+      "size_bytes": 30
+    },
+    {
+      "path": "findings/rocba-memory.windows_pstree.volatility.stdout.txt",
+      "sha256": "18de082c2c70d6d205593852a56374e40cdf78d5aa26f60f567863003bcb724b",
+      "size_bytes": 1048576
+    },
+    {
+      "path": "findings/signal_integrity.json",
+      "sha256": "b3f5cb8f6f891a00cf7d0d60d8496da54ddc0edf7ef899e94b4830ad41a59f6a",
+      "size_bytes": 20487
+    },
+    {
+      "path": "findings/stress_report.json",
+      "sha256": "6ec7695551563b9ed24ef003a17d8d3c909766b195605424005eb0307211c5ca",
+      "size_bytes": 6145
+    },
+    {
+      "path": "findings/temporal_gap_analysis.json",
+      "sha256": "a8d44d06280c9cf2c235dda8b2e5d4a44edf60b8d19b45c587aed3fa7f11ddd5",
+      "size_bytes": 39388
+    },
+    {
+      "path": "findings/tool_discovery.json",
+      "sha256": "2552de17d8eac9ca286a311fd67ebbdd600a5a07b8673e9feedd8b915353b421",
+      "size_bytes": 3532
+    },
+    {
+      "path": "findings/tool_results.json",
+      "sha256": "0fd9563384a63c8ded5ff2654d6e4b97cccf57f3296f596caf92304c41c7febe",
+      "size_bytes": 12485
+    },
+    {
+      "path": "findings/unknowns.json",
+      "sha256": "6d4c6f2cb23f74baf1e420ffac5063d06b3b8377ff7a5dc2a5f8eb9673d45ec4",
+      "size_bytes": 15674
+    },
+    {
+      "path": "findings/validation.json",
+      "sha256": "d8cc78412396d59474bd3ce84b9e9670cb2d8e5fd3718b3d9adb1f0e675e2a92",
+      "size_bytes": 4125
+    },
+    {
+      "path": "reports/agent_journal.md",
+      "sha256": "ebe6200541f1757d12c7f61cb8bdd0d395f9bbe5bde15a05341c1cfa0cfde9ef",
+      "size_bytes": 9935
+    },
+    {
+      "path": "reports/attack_stage_timeline.md",
+      "sha256": "d4c61c231c8caa3cfb8e08e3f864f771a48c72570bb221ba1faf8de80df3e42e",
+      "size_bytes": 414799
+    },
+    {
+      "path": "reports/case_objective.md",
+      "sha256": "c93df910aed2c1f9bacb0bc9c540862bf5d1ee09c090e53857ff47495da427dc",
+      "size_bytes": 1060
+    },
+    {
+      "path": "reports/contradiction_analysis.md",
+      "sha256": "4a037225ae9f6e92c04c5d152e4a884cf2e63d653e82f66971b501051472945d",
+      "size_bytes": 116
+    },
+    {
+      "path": "reports/evidence_maturity.md",
+      "sha256": "bf90274263d2188c19a0e1ed4434b2a5469063044466734b58b4737c32fca5db",
+      "size_bytes": 8448159
+    },
+    {
+      "path": "reports/evidence_triage.md",
+      "sha256": "44e04ec740ae136f0cf92ead0f0301408d165000bb3c4ef4525f01ebdef73700",
+      "size_bytes": 1305
+    },
+    {
+      "path": "reports/evidentiary_weighting.md",
+      "sha256": "5a8beb381542ae21894a77ebbc24dbee413dac0571701b5edc871af3cfd23411",
+      "size_bytes": 14479
+    },
+    {
+      "path": "reports/finding_provenance.md",
+      "sha256": "1737a2565b49fe3e53f11bc7fe35c1510a36377bc36827fa75728a255d3f6ff7",
+      "size_bytes": 10600
+    },
+    {
+      "path": "reports/investigation_plan.md",
+      "sha256": "ee02834d338f61de056380ee5b64d4c3786dc6e21489b3c9ab13c4243bcc4330",
+      "size_bytes": 1428
+    },
+    {
+      "path": "reports/llm_report_verification.md",
+      "sha256": "de73c4e9a9d3be1b2f0c4d2a56a8589c764e7f43e5c1c6888f8560288aa2020f",
+      "size_bytes": 480
+    },
+    {
+      "path": "reports/overall_reports.md",
+      "sha256": "47a8771417bb97e9b287043062879c5adc8abcbca88a6b459bd21925a32b9801",
+      "size_bytes": 803413
+    },
+    {
+      "path": "reports/report.html",
+      "sha256": "88e4654b458204037e94923bd31155301fdc340892d9d5518150652da1caae40",
+      "size_bytes": 36746783
+    },
+    {
+      "path": "reports/report.json",
+      "sha256": "188d687f385dd6b26c1d643e747ecdcdd2f112d1211ddeb4f2f128725e438a0b",
+      "size_bytes": 129700757
+    },
+    {
+      "path": "reports/report.md",
+      "sha256": "d931e5924b1e91b1e2ad43d4791d69e59bf8adeeac34eaa4fdca80a2bf769074",
+      "size_bytes": 28534436
+    },
+    {
+      "path": "reports/temporal_gap_analysis.md",
+      "sha256": "aa2e138a1e648dd4545edc3604a76b2c1cb13ac0cbbd02be46895be6e3b83691",
+      "size_bytes": 12755
+    },
+    {
+      "path": "timelines/rocba-cdrive-e01.log2timeline.stderr.txt",
+      "sha256": "36666bdb9f744a3f135ffcb081f17cf002ce706bd74db94952966b92fb810400",
+      "size_bytes": 3411
+    },
+    {
+      "path": "timelines/rocba-cdrive-e01.log2timeline.stdout.txt",
+      "sha256": "b8e907dfc3a4bc5f2a2e8331a903e123da2937321984e395794dac8aa810461d",
+      "size_bytes": 170
+    }
+  ],
+  "case_id": "BLITZ-ROCBA-MEMORY-E01",
+  "manifest_hash": "e4952271135dd02ee451fc51cebe7a75ea1c1de976a1a06ef336f5d6959bdef6",
+  "schema_version": "artifact-manifest.v1",
+  "self_excluded": "findings/artifact_manifest.json",
+  "session_id": "sess-20260615T073626Z-5118ee34",
+  "status": "COMPLETED",
+  "timestamp_utc": "2026-06-15T08:28:28.544894Z"
+}

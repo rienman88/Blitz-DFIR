@@ -1,0 +1,562 @@
+{
+  "case_id": "BLITZ-ROCBA-MEMORY-E01",
+  "current_layer": "audit_finalization",
+  "current_layer_name": "Audit finalization and artifact hashes",
+  "elapsed_seconds": 3121,
+  "eta_quality": "unavailable",
+  "eta_seconds": null,
+  "eta_utc": null,
+  "layers": [
+    {
+      "completed_at_utc": "2026-06-15T07:36:26.776058Z",
+      "details": {
+        "evidence_count": 2,
+        "manifest": "/cases/BLITZ-ROCBA-MEMORY-E01/case.yaml",
+        "resume": false
+      },
+      "layer_id": "manifest_integrity",
+      "name": "Manifest and evidence integrity",
+      "percent": 100.0,
+      "processed_items": null,
+      "started_at_utc": "2026-06-15T07:36:26.776058Z",
+      "status": "COMPLETED",
+      "total_items": null,
+      "updated_at_utc": "2026-06-15T07:36:26.776058Z",
+      "weight": 5
+    },
+    {
+      "completed_at_utc": "2026-06-15T07:36:26.816406Z",
+      "details": {
+        "agent_framework": "supervised_sift_launcher",
+        "case_root": "/cases/BLITZ-ROCBA-MEMORY-E01",
+        "claim_boundary": "This layer records Protocol SIFT-compatible workflow context. Findings still require manifest evidence, typed tool output, parser validation, normalization, correlation, and audit traceability.",
+        "control_path": "Protocol SIFT / SIFT launcher -> Blitz typed evidence pipeline -> SIFT forensic tools",
+        "generic_shell_exposed": false,
+        "raw_evidence_to_llm": false,
+        "raw_tool_output_to_llm": false,
+        "run_root": "/cases/BLITZ-ROCBA-MEMORY-E01/analysis/runs/20260615T070127Z_rocba_memory_e01_ollama",
+        "workflow": "protocol_sift_compatible_direct_analysis"
+      },
+      "layer_id": "protocol_sift_workflow",
+      "name": "Protocol SIFT workflow context",
+      "percent": 100.0,
+      "processed_items": null,
+      "started_at_utc": "2026-06-15T07:36:26.816406Z",
+      "status": "COMPLETED",
+      "total_items": null,
+      "updated_at_utc": "2026-06-15T07:36:26.816406Z",
+      "weight": 3
+    },
+    {
+      "completed_at_utc": "2026-06-15T07:36:26.898350Z",
+      "details": {
+        "artifact": "/cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/findings/case_objective.json",
+        "evidence_count": 2,
+        "source": "cli"
+      },
+      "layer_id": "case_objective",
+      "name": "Case objective definition",
+      "percent": 100.0,
+      "processed_items": null,
+      "started_at_utc": "2026-06-15T07:36:26.898350Z",
+      "status": "COMPLETED",
+      "total_items": null,
+      "updated_at_utc": "2026-06-15T07:36:26.898350Z",
+      "weight": 2
+    },
+    {
+      "completed_at_utc": "2026-06-15T07:36:27.418583Z",
+      "details": {
+        "available_tools": 8,
+        "hash_mismatch_count": 0,
+        "missing_tools": 0,
+        "tool_count": 8
+      },
+      "layer_id": "tool_discovery",
+      "name": "Tool discovery",
+      "percent": 100.0,
+      "processed_items": null,
+      "started_at_utc": "2026-06-15T07:36:26.912142Z",
+      "status": "COMPLETED",
+      "total_items": null,
+      "updated_at_utc": "2026-06-15T07:36:27.418583Z",
+      "weight": 4
+    },
+    {
+      "completed_at_utc": "2026-06-15T07:36:27.442652Z",
+      "details": {
+        "artifact": "/cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/findings/investigation_plan.json",
+        "limitation_count": 0,
+        "mode": "evidence_first",
+        "phase_count": 3,
+        "prioritized_artifact_families": [
+          "memory",
+          "disk_timeline"
+        ]
+      },
+      "layer_id": "investigation_planning",
+      "name": "Investigation planning",
+      "percent": 100.0,
+      "processed_items": null,
+      "started_at_utc": "2026-06-15T07:36:27.419860Z",
+      "status": "COMPLETED",
+      "total_items": null,
+      "updated_at_utc": "2026-06-15T07:36:27.442652Z",
+      "weight": 4
+    },
+    {
+      "completed_at_utc": "2026-06-15T07:36:27.483605Z",
+      "details": {
+        "batch_count": 2,
+        "batches": [
+          "batch-01-memory",
+          "batch-02-disk_timeline"
+        ],
+        "task_count": 7
+      },
+      "layer_id": "batch_planning",
+      "name": "Batch planning",
+      "percent": 100.0,
+      "processed_items": null,
+      "started_at_utc": "2026-06-15T07:36:27.448192Z",
+      "status": "COMPLETED",
+      "total_items": null,
+      "updated_at_utc": "2026-06-15T07:36:27.483605Z",
+      "weight": 4
+    },
+    {
+      "completed_at_utc": "2026-06-15T07:36:27.526058Z",
+      "details": {
+        "evidence_count": 2,
+        "high_or_critical_risk_count": 2,
+        "unavailable_tool_count": 0
+      },
+      "layer_id": "evidence_inventory",
+      "name": "Evidence inventory",
+      "percent": 100.0,
+      "processed_items": null,
+      "started_at_utc": "2026-06-15T07:36:27.489529Z",
+      "status": "COMPLETED",
+      "total_items": null,
+      "updated_at_utc": "2026-06-15T07:36:27.526058Z",
+      "weight": 4
+    },
+    {
+      "completed_at_utc": "2026-06-15T07:36:27.912216Z",
+      "details": {
+        "auto_runnable_candidate_count": 7,
+        "blocked_recovery_candidates": 1,
+        "recovery_candidates": 8,
+        "sequential_execution_required": true
+      },
+      "layer_id": "recovery_planning",
+      "name": "Recovery planning",
+      "percent": 100.0,
+      "processed_items": null,
+      "started_at_utc": "2026-06-15T07:36:27.893118Z",
+      "status": "COMPLETED",
+      "total_items": null,
+      "updated_at_utc": "2026-06-15T07:36:27.912216Z",
+      "weight": 4
+    },
+    {
+      "completed_at_utc": "2026-06-15T07:36:27.931995Z",
+      "details": {
+        "artifact": "/cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/findings/evidence_triage.json",
+        "critical_count": 0,
+        "evidence_count": 2,
+        "high_count": 1
+      },
+      "layer_id": "evidence_triage",
+      "name": "Evidence triage",
+      "percent": 100.0,
+      "processed_items": null,
+      "started_at_utc": "2026-06-15T07:36:27.914110Z",
+      "status": "COMPLETED",
+      "total_items": null,
+      "updated_at_utc": "2026-06-15T07:36:27.931995Z",
+      "weight": 4
+    },
+    {
+      "completed_at_utc": "2026-06-15T07:54:03.294207Z",
+      "details": {
+        "parser_results": 7,
+        "tool_results": 8
+      },
+      "layer_id": "typed_tool_execution",
+      "name": "Typed SIFT tool execution",
+      "percent": 100.0,
+      "processed_items": 7,
+      "started_at_utc": "2026-06-15T07:36:27.933549Z",
+      "status": "COMPLETED",
+      "total_items": 7,
+      "updated_at_utc": "2026-06-15T07:54:03.294207Z",
+      "weight": 20
+    },
+    {
+      "completed_at_utc": "2026-06-15T07:54:03.295898Z",
+      "details": {
+        "parser_processed_count": 1124391,
+        "parser_result_count": 7
+      },
+      "layer_id": "parsing",
+      "name": "Parser result extraction",
+      "percent": 100.0,
+      "processed_items": 7,
+      "started_at_utc": "2026-06-15T07:54:03.295071Z",
+      "status": "COMPLETED",
+      "total_items": 7,
+      "updated_at_utc": "2026-06-15T07:54:03.295898Z",
+      "weight": 8
+    },
+    {
+      "completed_at_utc": "2026-06-15T08:02:42.241572Z",
+      "details": {
+        "analysis_event_memory_limit": 50000,
+        "analysis_events_loaded": 50000,
+        "event_count": 1124391,
+        "truncated": false,
+        "warning_count": 5
+      },
+      "layer_id": "normalization",
+      "name": "SQLite-backed normalization",
+      "percent": 100.0,
+      "processed_items": 1124391,
+      "started_at_utc": "2026-06-15T07:54:03.296860Z",
+      "status": "COMPLETED",
+      "total_items": 1124391,
+      "updated_at_utc": "2026-06-15T08:02:42.241572Z",
+      "weight": 11
+    },
+    {
+      "completed_at_utc": "2026-06-15T08:03:35.649243Z",
+      "details": {
+        "normalized_event_count": 1124391,
+        "object_count": 12078,
+        "object_mention_count": 2506274,
+        "source": "sqlite_normalized_events"
+      },
+      "layer_id": "object_inventory",
+      "name": "Object inventory",
+      "percent": 100.0,
+      "processed_items": null,
+      "started_at_utc": "2026-06-15T08:02:42.291803Z",
+      "status": "COMPLETED",
+      "total_items": null,
+      "updated_at_utc": "2026-06-15T08:03:35.649243Z",
+      "weight": 6
+    },
+    {
+      "completed_at_utc": "2026-06-15T08:03:35.907609Z",
+      "details": {
+        "artifact_count": 7,
+        "event_store_path": "findings/event_store.sqlite",
+        "total_rows": 7089
+      },
+      "layer_id": "full_accounting",
+      "name": "Full accounting",
+      "percent": 100.0,
+      "processed_items": null,
+      "started_at_utc": "2026-06-15T08:03:35.752530Z",
+      "status": "COMPLETED",
+      "total_items": null,
+      "updated_at_utc": "2026-06-15T08:03:35.907609Z",
+      "weight": 6
+    },
+    {
+      "completed_at_utc": "2026-06-15T08:03:35.908490Z",
+      "details": {
+        "event_store_path": "findings/event_store.sqlite",
+        "total_rows": 7089
+      },
+      "layer_id": "sqlite_event_store",
+      "name": "SQLite event store",
+      "percent": 100.0,
+      "processed_items": null,
+      "started_at_utc": "2026-06-15T08:03:35.908490Z",
+      "status": "COMPLETED",
+      "total_items": null,
+      "updated_at_utc": "2026-06-15T08:03:35.908490Z",
+      "weight": 8
+    },
+    {
+      "completed_at_utc": "2026-06-15T08:06:21.241387Z",
+      "details": {
+        "attack_stage_count": 5,
+        "backend": "sqlite",
+        "contradiction_count": 0,
+        "finding_count": 22293,
+        "lineage_link_count": 0
+      },
+      "layer_id": "correlation",
+      "name": "Correlation and suspicion scoring",
+      "percent": 100.0,
+      "processed_items": null,
+      "started_at_utc": "2026-06-15T08:03:35.909267Z",
+      "status": "COMPLETED",
+      "total_items": null,
+      "updated_at_utc": "2026-06-15T08:06:21.241387Z",
+      "weight": 12
+    },
+    {
+      "completed_at_utc": "2026-06-15T08:06:21.286215Z",
+      "details": {
+        "attack_stages": [
+          "defense_evasion_or_injection",
+          "execution",
+          "initial_access_or_lateral_movement",
+          "persistence",
+          "privilege_or_credential_use"
+        ],
+        "investigation_guidance": "/cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/findings/investigation_guidance.json",
+        "recommendation_count": 7,
+        "recommended_tools": [
+          "events",
+          "memory",
+          "strings",
+          "timeline",
+          "yara"
+        ]
+      },
+      "layer_id": "investigation_guidance",
+      "name": "Investigation guidance",
+      "percent": 100.0,
+      "processed_items": null,
+      "started_at_utc": "2026-06-15T08:06:21.242813Z",
+      "status": "COMPLETED",
+      "total_items": null,
+      "updated_at_utc": "2026-06-15T08:06:21.286215Z",
+      "weight": 2
+    },
+    {
+      "completed_at_utc": "2026-06-15T08:06:21.667988Z",
+      "details": {
+        "attack_stage_count": 5,
+        "attack_stage_timeline": "/cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/findings/attack_stage_timeline.json",
+        "temporal_gap_analysis": "/cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/findings/temporal_gap_analysis.json",
+        "temporal_gap_count": 100,
+        "timestamp_quality": "partial"
+      },
+      "layer_id": "temporal_analysis",
+      "name": "Temporal gap and attack-stage timeline",
+      "percent": 100.0,
+      "processed_items": null,
+      "started_at_utc": "2026-06-15T08:06:21.287394Z",
+      "status": "COMPLETED",
+      "total_items": null,
+      "updated_at_utc": "2026-06-15T08:06:21.667988Z",
+      "weight": 2
+    },
+    {
+      "completed_at_utc": "2026-06-15T08:06:26.851108Z",
+      "details": {
+        "average_evidence_weight": 0.8999,
+        "evidentiary_weighting": "/cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/findings/evidentiary_weighting.json",
+        "finding_count": 22293
+      },
+      "layer_id": "evidentiary_weighting",
+      "name": "Evidentiary weighting",
+      "percent": 100.0,
+      "processed_items": null,
+      "started_at_utc": "2026-06-15T08:06:21.669146Z",
+      "status": "COMPLETED",
+      "total_items": null,
+      "updated_at_utc": "2026-06-15T08:06:26.851108Z",
+      "weight": 2
+    },
+    {
+      "completed_at_utc": "2026-06-15T08:06:26.865475Z",
+      "details": {
+        "contradiction_analysis": "/cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/findings/contradiction_analysis.json",
+        "contradiction_count": 0,
+        "contradiction_score": 0.0,
+        "impacted_finding_count": 0
+      },
+      "layer_id": "contradiction_analysis",
+      "name": "Evidence contradiction analysis",
+      "percent": 100.0,
+      "processed_items": null,
+      "started_at_utc": "2026-06-15T08:06:26.852150Z",
+      "status": "COMPLETED",
+      "total_items": null,
+      "updated_at_utc": "2026-06-15T08:06:26.865475Z",
+      "weight": 2
+    },
+    {
+      "completed_at_utc": "2026-06-15T08:06:26.883844Z",
+      "details": {
+        "correction_status": "SKIPPED",
+        "issue_count": 12,
+        "trigger_count": 2,
+        "validation_passed": false
+      },
+      "layer_id": "validation",
+      "name": "Validation",
+      "percent": 100.0,
+      "processed_items": null,
+      "started_at_utc": "2026-06-15T08:06:26.866489Z",
+      "status": "COMPLETED",
+      "total_items": null,
+      "updated_at_utc": "2026-06-15T08:06:26.883844Z",
+      "weight": 3
+    },
+    {
+      "completed_at_utc": "2026-06-15T08:06:26.896001Z",
+      "details": {
+        "issue_count": 12,
+        "unknown_count": 32,
+        "validation_passed": false
+      },
+      "layer_id": "unknowns",
+      "name": "Unknowns and coverage",
+      "percent": 100.0,
+      "processed_items": null,
+      "started_at_utc": "2026-06-15T08:06:26.884945Z",
+      "status": "COMPLETED",
+      "total_items": null,
+      "updated_at_utc": "2026-06-15T08:06:26.896001Z",
+      "weight": 3
+    },
+    {
+      "completed_at_utc": "2026-06-15T08:08:53.724371Z",
+      "details": {
+        "hypothesis_count": 0,
+        "model": "llama3.2:1b",
+        "prompt_hash": "c3aad58909a87b711bb765e66ef3ed8e560717f24143a55c0a9a0d49552cdf70",
+        "provider": "ollama",
+        "raw_evidence_sent": false,
+        "raw_tool_output_sent": false,
+        "total_tokens": 4895
+      },
+      "layer_id": "bounded_llm_reasoning",
+      "name": "Bounded LLM reasoning over validated summaries",
+      "percent": 100.0,
+      "processed_items": null,
+      "started_at_utc": "2026-06-15T08:06:26.897472Z",
+      "status": "COMPLETED",
+      "total_items": null,
+      "updated_at_utc": "2026-06-15T08:08:53.724371Z",
+      "weight": 4
+    },
+    {
+      "completed_at_utc": "2026-06-15T08:08:53.817983Z",
+      "details": {
+        "invalid_evidence_reference_count": 0,
+        "llm_report_verification": "/cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/findings/llm_report_verification.json",
+        "reasoning_enabled": true,
+        "status": "passed",
+        "supported_hypotheses_without_evidence": 0
+      },
+      "layer_id": "llm_report_verification",
+      "name": "LLM report verification",
+      "percent": 100.0,
+      "processed_items": null,
+      "started_at_utc": "2026-06-15T08:08:53.725445Z",
+      "status": "COMPLETED",
+      "total_items": null,
+      "updated_at_utc": "2026-06-15T08:08:53.817983Z",
+      "weight": 2
+    },
+    {
+      "completed_at_utc": "2026-06-15T08:09:37.704626Z",
+      "details": {
+        "report_finding_count": 22293,
+        "report_html": "/cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/reports/report.html",
+        "report_json": "/cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/reports/report.json",
+        "report_markdown": "/cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/reports/report.md",
+        "report_timeline_count": 22293
+      },
+      "layer_id": "report_generation",
+      "name": "Report generation",
+      "percent": 100.0,
+      "processed_items": 4,
+      "started_at_utc": "2026-06-15T08:08:53.820326Z",
+      "status": "COMPLETED",
+      "total_items": 4,
+      "updated_at_utc": "2026-06-15T08:09:37.704626Z",
+      "weight": 2
+    },
+    {
+      "completed_at_utc": "2026-06-15T08:27:57.256480Z",
+      "details": {
+        "evidence_maturity_json": "/cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/findings/evidence_maturity.json",
+        "evidence_maturity_markdown": "/cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/reports/evidence_maturity.md",
+        "finding_count": 22293,
+        "finding_provenance_markdown": "/cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/reports/finding_provenance.md",
+        "traceable_finding_count": 22293
+      },
+      "layer_id": "evidence_maturity",
+      "name": "Evidence maturity traceability",
+      "percent": 100.0,
+      "processed_items": null,
+      "started_at_utc": "2026-06-15T08:09:37.705723Z",
+      "status": "COMPLETED",
+      "total_items": null,
+      "updated_at_utc": "2026-06-15T08:27:57.256480Z",
+      "weight": 2
+    },
+    {
+      "completed_at_utc": "2026-06-15T08:28:09.193758Z",
+      "details": {
+        "agent_journal": "/cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/reports/agent_journal.md",
+        "agent_trace": "/cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/findings/agent_trace.json",
+        "finding_count": 22293,
+        "hypothesis_count": 1,
+        "plan_change_count": 10
+      },
+      "layer_id": "agent_trace",
+      "name": "Agent trace and investigative journal",
+      "percent": 100.0,
+      "processed_items": null,
+      "started_at_utc": "2026-06-15T08:27:57.257426Z",
+      "status": "COMPLETED",
+      "total_items": null,
+      "updated_at_utc": "2026-06-15T08:28:09.193758Z",
+      "weight": 2
+    },
+    {
+      "completed_at_utc": "2026-06-15T08:28:15.538086Z",
+      "details": {
+        "collated_audit": "/cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/audit/collated_audit.md",
+        "overall_findings": "/cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/findings/overall_findings.md",
+        "overall_reports": "/cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/reports/overall_reports.md"
+      },
+      "layer_id": "collated_outputs",
+      "name": "Overall findings, reports, and collated audit",
+      "percent": 100.0,
+      "processed_items": null,
+      "started_at_utc": "2026-06-15T08:28:09.379937Z",
+      "status": "COMPLETED",
+      "total_items": null,
+      "updated_at_utc": "2026-06-15T08:28:15.538086Z",
+      "weight": 1
+    },
+    {
+      "completed_at_utc": "2026-06-15T08:28:28.554092Z",
+      "details": {
+        "event_count": 1124391,
+        "finding_count": 22293,
+        "status": "analysis_completed",
+        "validation_passed": false
+      },
+      "layer_id": "audit_finalization",
+      "name": "Audit finalization and artifact hashes",
+      "percent": 100.0,
+      "processed_items": null,
+      "started_at_utc": "2026-06-15T08:28:15.543513Z",
+      "status": "COMPLETED",
+      "total_items": null,
+      "updated_at_utc": "2026-06-15T08:28:28.554092Z",
+      "weight": 1
+    }
+  ],
+  "operator_note": "Progress is shell-readable and audit-adjacent. ETA is a coarse weighted-stage estimate and is most useful after at least one layer has completed.",
+  "overall_percent": 100.0,
+  "progress_hash": "4e1260aef238e029edbe170aaf27bccb1ec135c6d2f63357eabaf305bc75c28f",
+  "schema_version": "progress-state.v1",
+  "session_id": "sess-20260615T073626Z-5118ee34",
+  "started_at_utc": "2026-06-15T07:36:26.776058Z",
+  "status": "COMPLETED",
+  "updated_at_utc": "2026-06-15T08:28:28.554092Z",
+  "writer_pid": 3668
+}

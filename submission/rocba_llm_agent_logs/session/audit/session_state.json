@@ -1,0 +1,19 @@
+{
+  "case_id": "BLITZ-ROCBA-MEMORY-E01",
+  "details": {
+    "agent_journal": "/cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/reports/agent_journal.md",
+    "agent_trace": "/cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/findings/agent_trace.json",
+    "artifact_manifest": "/cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/findings/artifact_manifest.json",
+    "audit_log": "/cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/audit/sess-20260615T073626Z-5118ee34.ndjson",
+    "collated_audit": "/cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/audit/collated_audit.md",
+    "overall_findings": "/cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/findings/overall_findings.md",
+    "overall_reports": "/cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/reports/overall_reports.md",
+    "validation_passed": false
+  },
+  "phase": "analysis_completed",
+  "schema_version": "session-state.v1",
+  "session_id": "sess-20260615T073626Z-5118ee34",
+  "state_hash": "b3c9e5dea69f9b9c1f9b528542041dcf891be59598c83783241083be72cd09b7",
+  "status": "COMPLETED",
+  "timestamp_utc": "2026-06-15T08:28:28.553763Z"
+}

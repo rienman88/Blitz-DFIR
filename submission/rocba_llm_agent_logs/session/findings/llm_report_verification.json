@@ -1,0 +1,19 @@
+{
+  "blocked_tool_request_count": 0,
+  "checked_decisions": 1,
+  "checked_hypotheses": 0,
+  "event_count": 22293,
+  "evidence_type": "INFERRED",
+  "finding_count": 22293,
+  "forbidden_language_hit_count": 0,
+  "interpretation": "LLM reasoning stayed inside bounded INFERRED reporting controls and referenced known normalized events.",
+  "invalid_evidence_reference_count": 0,
+  "issues": [],
+  "raw_evidence_sent": false,
+  "raw_tool_output_sent": false,
+  "reasoning_enabled": true,
+  "schema_version": "llm-report-verification.v1",
+  "status": "passed",
+  "supported_hypotheses_without_evidence": 0,
+  "unsupported_hypotheses": 0
+}

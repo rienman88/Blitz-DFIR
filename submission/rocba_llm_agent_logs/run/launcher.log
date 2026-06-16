@@ -1,0 +1,185 @@
+[scope]
+case=BLITZ-ROCBA-MEMORY-E01
+run_id=20260615T070127Z_rocba_memory_e01_ollama
+run_mode=clean
+run_root=/cases/BLITZ-ROCBA-MEMORY-E01/analysis/runs/20260615T070127Z_rocba_memory_e01_ollama
+workdir=/home/sansforensics/src/Blitz_DFIR
+manifest=/cases/BLITZ-ROCBA-MEMORY-E01/case.yaml
+case_root=/cases/BLITZ-ROCBA-MEMORY-E01
+output_dir=/cases/BLITZ-ROCBA-MEMORY-E01/output
+memory_src=/cases/BLITZ-ROCBA-MEMORY/raw/Rocba-Memory.raw
+e01_src=/cases/Rocba-E01/rocba-cdrive.e01
+raw_evidence_mode=external_absolute_paths_no_copy
+tool_config=/home/sansforensics/src/Blitz_DFIR/config/tools.yaml
+volatility_symbols_dir=/cases/volatility_symbols
+case_objective=Analyze Rocba memory and C-drive E01 together for evidence-backed suspicious processes, execution artifacts, persistence indicators, credential activity, user activity, temporal gaps, cross-source correlation, and unknowns while avoiding unsupported conclusions.
+enable_reasoning=1
+llm_provider=ollama
+llm_base_url=http://192.168.88.1:11434/v1
+llm_model=llama3.2:1b
+llm_timeout_seconds=600
+llm_max_tokens=800
+llm_response_format_json=1
+ollama_keep_alive=30m
+ollama_tags_timeout=30
+ollama_generate_timeout=600
+ollama_chat_timeout=600
+ollama_keepalive_interval_seconds=600
+max_normalized_events=5000000
+max_analysis_events=2000000
+sqlite_analysis_event_memory_limit=50000
+sqlite_normalization_checkpoint_interval=100000
+sql_correlation_finding_limit=25000
+sql_correlation_support_event_limit=50000
+psort_profile=triage
+psort_filter=(data_type contains 'windows:evtx' or data_type contains 'windows:prefetch' or data_type contains 'windows:lnk' or data_type contains 'windows:registry' or data_type contains 'windows:timeline' or data_type contains 'setupapi' or data_type contains 'srum')
+windows_artifact_profile=windows-light
+log2timeline_partitions=all
+log2timeline_vss_stores=none
+log2timeline_parsers=profile:windows-light
+disk_triage_fallback=1
+disk_triage_max_partitions=8
+disk_triage_max_entries=3000000
+disk_triage_seconds_per_partition=1800
+full_sql_correlation=1
+
+[disk before]
+Filesystem                         Size  Used Avail Use% Mounted on
+/dev/mapper/ubuntu--vg-ubuntu--lv   98G   69G   24G  75% /
+
+[memory before]
+               total        used        free      shared  buff/cache   available
+Mem:           5.8Gi       1.5Gi       118Mi        35Mi       4.5Gi       4.3Gi
+Swap:          3.8Gi       780Ki       3.8Gi
+
+[manifest]
+case_id: BLITZ-ROCBA-MEMORY-E01
+evidence_root: external
+output_root: /cases/BLITZ-ROCBA-MEMORY-E01/output
+evidence:
+- id: rocba-memory
+  path: /cases/BLITZ-ROCBA-MEMORY/raw/Rocba-Memory.raw
+  type: MEMORY
+  sha256: eb33bdf63730858a805463d171245b233335dd6d89ed458bc681f7d282e10563
+  description: Rocba memory image referenced in place; raw evidence is not copied
+    into the Blitz case.
+- id: rocba-cdrive-e01
+  path: /cases/Rocba-E01/rocba-cdrive.e01
+  type: E01
+  sha256: f2eb856d6fb48e3928e6b6d388b2f116a57b735137354a7eaddca951d81b5c67
+  description: Rocba C-drive E01 referenced in place; raw evidence is not copied into
+    the Blitz case.
+
+[manifest preflight]
+manifest_ok=1 case_id=BLITZ-ROCBA-MEMORY-E01 external_evidence=True evidence_count=2
+evidence id=rocba-memory type=MEMORY path=/cases/BLITZ-ROCBA-MEMORY/raw/Rocba-Memory.raw verified=True size=19050528768
+evidence id=rocba-cdrive-e01 type=E01 path=/cases/Rocba-E01/rocba-cdrive.e01 verified=True size=23678691658
+
+[ollama preflight]
+ollama_tags_elapsed_seconds=0.4
+ollama_tags=ok model_count=1
+ollama_models=llama3.2:1b
+ollama_generate_elapsed_seconds=17.9
+ollama_generate_total_duration_ms=17846.5
+ollama_generate_load_duration_ms=17417.2
+ollama_generate_prompt_eval_duration_ms=166.3
+ollama_generate_eval_duration_ms=242.6
+ollama_generate=ok response='Pong.'
+openai_compat_chat_elapsed_seconds=1.2
+openai_compat_chat=ok response='{\n\n    "status": "pong" \n\n}'
+ollama_preflight=ok
+ollama_keepalive_started pid=3660 interval_seconds=600 log=/cases/BLITZ-ROCBA-MEMORY-E01/analysis/runs/20260615T070127Z_rocba_memory_e01_ollama/ollama_keepalive.log
+
+[analysis command]
+/home/sansforensics/src/Blitz_DFIR/.venv/bin/python app.py analyze --manifest /cases/BLITZ-ROCBA-MEMORY-E01/case.yaml --mode timeline --tool-config /home/sansforensics/src/Blitz_DFIR/config/tools.yaml --case-objective Analyze\ Rocba\ memory\ and\ C-drive\ E01\ together\ for\ evidence-backed\ suspicious\ processes\,\ execution\ artifacts\,\ persistence\ indicators\,\ credential\ activity\,\ user\ activity\,\ temporal\ gaps\,\ cross-source\ correlation\,\ and\ unknowns\ while\ avoiding\ unsupported\ conclusions. --psort-profile triage --psort-filter \(data_type\ contains\ \'windows:evtx\'\ or\ data_type\ contains\ \'windows:prefetch\'\ or\ data_type\ contains\ \'windows:lnk\'\ or\ data_type\ contains\ \'windows:registry\'\ or\ data_type\ contains\ \'windows:timeline\'\ or\ data_type\ contains\ \'setupapi\'\ or\ data_type\ contains\ \'srum\'\) --windows-artifact-profile windows-light --tool-timeout 7200 --max-normalized-events 5000000 --max-analysis-events 2000000 --report-event-limit 2000000 --report-finding-limit 2000000 --normalized-export-limit 10000 --parser-record-export-limit 10000 --full-sql-correlation --enable-reasoning 
+[+] Manifest loaded: case_id=BLITZ-ROCBA-MEMORY-E01 evidence_count=2 session_id=sess-20260615T073626Z-5118ee34
+[+] Protocol SIFT workflow context recorded: workflow=protocol_sift_compatible_direct_analysis agent_framework=supervised_sift_launcher case_root=/cases/BLITZ-ROCBA-MEMORY-E01 run_root=/cases/BLITZ-ROCBA-MEMORY-E01/analysis/runs/20260615T070127Z_rocba_memory_e01_ollama control_path=Protocol SIFT / SIFT launcher -> Blitz typed evidence pipeline -> SIFT forensic tools generic_shell_exposed=False raw_evidence_to_llm=False raw_tool_output_to_llm=False claim_boundary=This layer records Protocol SIFT-compatible workflow context. Findings still require manifest evidence, typed tool output, parser validation, normalization, correlation, and audit traceability.
+[+] Case objective defined: source=cli evidence_count=2
+[+] Investigation plan completed: families=memory,disk_timeline phases=3
+[+] Batch plan created: batches=2 tasks=7
+[+] Evidence triage completed: evidence=2 critical=0 high=1
+[+] Batch started: batch_id=batch-01-memory family=memory tasks=6
+[+] Evidence queued: evidence_id=rocba-memory type=MEMORY
+[+] Typed tool started: tool=memory evidence_id=rocba-memory
+[+] Typed tool completed: tool=memory exit_code=0 duration_ms=56557 timed_out=False
+[+] Evidence queued: evidence_id=rocba-memory type=MEMORY
+[+] Typed tool started: tool=memory evidence_id=rocba-memory
+[+] Typed tool completed: tool=memory exit_code=0 duration_ms=10540 timed_out=False
+[+] Evidence queued: evidence_id=rocba-memory type=MEMORY
+[+] Typed tool started: tool=memory evidence_id=rocba-memory
+[+] Typed tool completed: tool=memory exit_code=0 duration_ms=3173 timed_out=False
+[+] Evidence queued: evidence_id=rocba-memory type=MEMORY
+[+] Typed tool started: tool=memory evidence_id=rocba-memory
+[+] Typed tool completed: tool=memory exit_code=0 duration_ms=224685 timed_out=False
+[+] Evidence queued: evidence_id=rocba-memory type=MEMORY
+[+] Typed tool started: tool=memory evidence_id=rocba-memory
+[+] Typed tool completed: tool=memory exit_code=0 duration_ms=198606 timed_out=False
+[+] Evidence queued: evidence_id=rocba-memory type=MEMORY
+[+] Typed tool started: tool=memory evidence_id=rocba-memory
+[+] Typed tool completed: tool=memory exit_code=0 duration_ms=295074 timed_out=False
+[+] Batch completed: batch_id=batch-01-memory tool_results=6 parser_results=6
+[+] Batch started: batch_id=batch-02-disk_timeline family=disk_timeline tasks=1
+[+] Evidence queued: evidence_id=rocba-cdrive-e01 type=E01
+[+] Typed tool started: tool=timeline evidence_id=rocba-cdrive-e01
+[+] Typed tool completed: tool=timeline exit_code=1 duration_ms=23340 timed_out=False
+[+] Disk triage fallback started: evidence_id=rocba-cdrive-e01 reason=exit_code=1; primary_output=timelines/rocba-cdrive-e01.plaso; stderr=timelines/rocba-cdrive-e01.log2timeline.stderr.txt
+[+] Typed tool started: tool=disk_triage evidence_id=rocba-cdrive-e01
+[+] Typed tool completed: tool=disk_triage exit_code=0 duration_ms=239569 timed_out=False
+[+] Batch completed: batch_id=batch-02-disk_timeline tool_results=2 parser_results=1
+[+] Normalization completed: events=1124391 warnings=6 analysis_events_loaded=50000
+[+] Object inventory completed: source=sqlite_normalized_events objects=12078 normalized_events=1124391
+[+] Full SQL correlation completed: rows_scanned=1124391 candidates=22290 findings=22293
+[+] Correlation completed: findings=22293 stages=5
+[+] Investigation guidance generated: recommendations=7 recommended_tools=('events', 'memory', 'strings', 'timeline', 'yara')
+[+] Validation completed: passed=False issues=12
+[+] Validation artifacts written: validation=/cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/findings/validation.json unknowns=/cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/findings/unknowns.json
+[+] Reports written: report_html=/cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/reports/report.html
+[+] Analysis completed for case: BLITZ-ROCBA-MEMORY-E01
+[+] Read-only scope enforced through manifest-registered evidence IDs
+[+] Session created: sess-20260615T073626Z-5118ee34
+[+] Normalized events: 1124391
+[+] Findings: 22293
+[+] Signal warnings: 18
+[+] Validation passed: False
+[+] Reasoning enabled: True
+[+] Audit chain written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/audit/sess-20260615T073626Z-5118ee34.ndjson
+[+] Session state written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/audit/session_state.json
+[+] Progress state written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/audit/progress.json
+[+] Artifact manifest written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/findings/artifact_manifest.json
+[+] Case objective written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/findings/case_objective.json
+[+] Case objective Markdown written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/reports/case_objective.md
+[+] Investigation plan written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/findings/investigation_plan.json
+[+] Investigation plan Markdown written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/reports/investigation_plan.md
+[+] Evidence triage written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/findings/evidence_triage.json
+[+] Evidence triage Markdown written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/reports/evidence_triage.md
+[+] Batch plan written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/findings/batch_plan.json
+[+] Tool discovery written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/findings/tool_discovery.json
+[+] Evidence inventory written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/findings/evidence_inventory.json
+[+] Recovery plan written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/findings/recovery_plan.json
+[+] Object inventory written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/findings/object_inventory.json
+[+] Full accounting written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/findings/full_accounting.json
+[+] Event store written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/findings/event_store.sqlite
+[+] Unknowns written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/findings/unknowns.json
+[+] Stress report written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/findings/stress_report.json
+[+] Evidentiary weighting JSON written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/findings/evidentiary_weighting.json
+[+] Investigation guidance JSON written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/findings/investigation_guidance.json
+[+] Temporal gap analysis JSON written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/findings/temporal_gap_analysis.json
+[+] Attack-stage timeline JSON written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/findings/attack_stage_timeline.json
+[+] LLM report verification JSON written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/findings/llm_report_verification.json
+[+] Evidence contradiction analysis JSON written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/findings/contradiction_analysis.json
+[+] Evidentiary weighting Markdown written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/reports/evidentiary_weighting.md
+[+] Temporal gap analysis Markdown written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/reports/temporal_gap_analysis.md
+[+] Attack-stage timeline Markdown written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/reports/attack_stage_timeline.md
+[+] LLM report verification Markdown written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/reports/llm_report_verification.md
+[+] Evidence contradiction analysis Markdown written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/reports/contradiction_analysis.md
+[+] Evidence maturity JSON written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/findings/evidence_maturity.json
+[+] Evidence maturity Markdown written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/reports/evidence_maturity.md
+[+] Finding provenance Markdown written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/reports/finding_provenance.md
+[+] Agent trace JSON written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/findings/agent_trace.json
+[+] Agent journal Markdown written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/reports/agent_journal.md
+[+] Overall findings written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/findings/overall_findings.md
+[+] Overall reports written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/reports/overall_reports.md
+[+] Collated audit written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/audit/collated_audit.md
+[+] JSON report written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/reports/report.json
+[+] Markdown report written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/reports/report.md
+[+] HTML report written: /cases/BLITZ-ROCBA-MEMORY-E01/output/sess-20260615T073626Z-5118ee34/reports/report.html

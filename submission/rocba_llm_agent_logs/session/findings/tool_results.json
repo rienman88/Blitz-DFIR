@@ -1,0 +1,352 @@
+[
+  {
+    "case_id": "BLITZ-ROCBA-MEMORY-E01",
+    "evidence_id": "rocba-memory",
+    "execution": {
+      "command": [
+        "vol",
+        "-q",
+        "--symbol-dirs",
+        "[outside-session-root]/volatility_symbols",
+        "-f",
+        "[outside-session-root]/Rocba-Memory.raw",
+        "-r",
+        "json",
+        "windows.pslist"
+      ],
+      "command_args_hash": "b83f6dcad31462d0162c90ed5fecb0e521bb361ad50b3c1108a648b956eec5f0",
+      "duration_ms": 56557,
+      "executable_name": "vol",
+      "exit_code": 0,
+      "timed_out": false
+    },
+    "outputs": {
+      "output_hash": "6cd531d1935f157abaef844df0f22370e2ecf0a76a7dee6dcfb711845dbbdf0e",
+      "primary_output": "findings/rocba-memory.windows_pslist.json",
+      "stderr": "findings/rocba-memory.windows_pslist.volatility.stderr.txt",
+      "stderr_hash": "42dff4c93e3122a9a5a7d8ecb64509fac9f4e731938c9ddcca00dd650dc0b09f",
+      "stdout": "findings/rocba-memory.windows_pslist.volatility.stdout.txt",
+      "stdout_hash": "6cd531d1935f157abaef844df0f22370e2ecf0a76a7dee6dcfb711845dbbdf0e"
+    },
+    "raw_output_returned": false,
+    "session_id": "sess-20260615T073626Z-5118ee34",
+    "tool_integrity": {
+      "actual_sha256": "01855f549c6169aa1044c8c2283400a34c13ab9b71824781ff830c3a74fbbf2f",
+      "executable": "vol",
+      "expected_sha256": null,
+      "resolved_executable": "vol",
+      "verified": true,
+      "warnings": []
+    },
+    "tool_name": "volatility",
+    "typed_tool": "memory",
+    "warnings": []
+  },
+  {
+    "case_id": "BLITZ-ROCBA-MEMORY-E01",
+    "evidence_id": "rocba-memory",
+    "execution": {
+      "command": [
+        "vol",
+        "-q",
+        "--symbol-dirs",
+        "[outside-session-root]/volatility_symbols",
+        "-f",
+        "[outside-session-root]/Rocba-Memory.raw",
+        "-r",
+        "json",
+        "windows.pstree"
+      ],
+      "command_args_hash": "91529fba39a4bd46495e76b595bb58827e0a8c975a81145b6acd6f616e22d13c",
+      "duration_ms": 10540,
+      "executable_name": "vol",
+      "exit_code": 0,
+      "timed_out": false
+    },
+    "outputs": {
+      "output_hash": "b4a3015295ce736f5eaa5e13a5c8407be7ba1a1da452e7e74bb7b1a233466ef1",
+      "primary_output": "findings/rocba-memory.windows_pstree.json",
+      "stderr": "findings/rocba-memory.windows_pstree.volatility.stderr.txt",
+      "stderr_hash": "42dff4c93e3122a9a5a7d8ecb64509fac9f4e731938c9ddcca00dd650dc0b09f",
+      "stdout": "findings/rocba-memory.windows_pstree.volatility.stdout.txt",
+      "stdout_hash": "18de082c2c70d6d205593852a56374e40cdf78d5aa26f60f567863003bcb724b"
+    },
+    "raw_output_returned": false,
+    "session_id": "sess-20260615T073626Z-5118ee34",
+    "tool_integrity": {
+      "actual_sha256": "01855f549c6169aa1044c8c2283400a34c13ab9b71824781ff830c3a74fbbf2f",
+      "executable": "vol",
+      "expected_sha256": null,
+      "resolved_executable": "vol",
+      "verified": true,
+      "warnings": []
+    },
+    "tool_name": "volatility",
+    "typed_tool": "memory",
+    "warnings": []
+  },
+  {
+    "case_id": "BLITZ-ROCBA-MEMORY-E01",
+    "evidence_id": "rocba-memory",
+    "execution": {
+      "command": [
+        "vol",
+        "-q",
+        "--symbol-dirs",
+        "[outside-session-root]/volatility_symbols",
+        "-f",
+        "[outside-session-root]/Rocba-Memory.raw",
+        "-r",
+        "json",
+        "windows.cmdline"
+      ],
+      "command_args_hash": "ea47bba71c8f4196d77c0f1bfecdc57a31b7c82ff9dc05e76f8be5ca9129eb9c",
+      "duration_ms": 3173,
+      "executable_name": "vol",
+      "exit_code": 0,
+      "timed_out": false
+    },
+    "outputs": {
+      "output_hash": "a31fbdfbb2244ebe795a8d2f33b72b92909560f6625287bcd96e4bad3b47e9bf",
+      "primary_output": "findings/rocba-memory.windows_cmdline.json",
+      "stderr": "findings/rocba-memory.windows_cmdline.volatility.stderr.txt",
+      "stderr_hash": "42dff4c93e3122a9a5a7d8ecb64509fac9f4e731938c9ddcca00dd650dc0b09f",
+      "stdout": "findings/rocba-memory.windows_cmdline.volatility.stdout.txt",
+      "stdout_hash": "a31fbdfbb2244ebe795a8d2f33b72b92909560f6625287bcd96e4bad3b47e9bf"
+    },
+    "raw_output_returned": false,
+    "session_id": "sess-20260615T073626Z-5118ee34",
+    "tool_integrity": {
+      "actual_sha256": "01855f549c6169aa1044c8c2283400a34c13ab9b71824781ff830c3a74fbbf2f",
+      "executable": "vol",
+      "expected_sha256": null,
+      "resolved_executable": "vol",
+      "verified": true,
+      "warnings": []
+    },
+    "tool_name": "volatility",
+    "typed_tool": "memory",
+    "warnings": []
+  },
+  {
+    "case_id": "BLITZ-ROCBA-MEMORY-E01",
+    "evidence_id": "rocba-memory",
+    "execution": {
+      "command": [
+        "vol",
+        "-q",
+        "--symbol-dirs",
+        "[outside-session-root]/volatility_symbols",
+        "-f",
+        "[outside-session-root]/Rocba-Memory.raw",
+        "-r",
+        "json",
+        "windows.psscan"
+      ],
+      "command_args_hash": "4498f394c30613587975e400f0973223170f2e6907ac8da2d1d4b9cc2e45c057",
+      "duration_ms": 224685,
+      "executable_name": "vol",
+      "exit_code": 0,
+      "timed_out": false
+    },
+    "outputs": {
+      "output_hash": "36cff5deb46df9d0389e641b50b1d5d2f3a8eeb955a7479885c3ad3c90831504",
+      "primary_output": "findings/rocba-memory.windows_psscan.json",
+      "stderr": "findings/rocba-memory.windows_psscan.volatility.stderr.txt",
+      "stderr_hash": "42dff4c93e3122a9a5a7d8ecb64509fac9f4e731938c9ddcca00dd650dc0b09f",
+      "stdout": "findings/rocba-memory.windows_psscan.volatility.stdout.txt",
+      "stdout_hash": "36cff5deb46df9d0389e641b50b1d5d2f3a8eeb955a7479885c3ad3c90831504"
+    },
+    "raw_output_returned": false,
+    "session_id": "sess-20260615T073626Z-5118ee34",
+    "tool_integrity": {
+      "actual_sha256": "01855f549c6169aa1044c8c2283400a34c13ab9b71824781ff830c3a74fbbf2f",
+      "executable": "vol",
+      "expected_sha256": null,
+      "resolved_executable": "vol",
+      "verified": true,
+      "warnings": []
+    },
+    "tool_name": "volatility",
+    "typed_tool": "memory",
+    "warnings": []
+  },
+  {
+    "case_id": "BLITZ-ROCBA-MEMORY-E01",
+    "evidence_id": "rocba-memory",
+    "execution": {
+      "command": [
+        "vol",
+        "-q",
+        "--symbol-dirs",
+        "[outside-session-root]/volatility_symbols",
+        "-f",
+        "[outside-session-root]/Rocba-Memory.raw",
+        "-r",
+        "json",
+        "windows.netscan"
+      ],
+      "command_args_hash": "89ba68b84d4422bdd2ab1e9a0c78ab7746a9c1845e5170048828ed5f3d936882",
+      "duration_ms": 198606,
+      "executable_name": "vol",
+      "exit_code": 0,
+      "timed_out": false
+    },
+    "outputs": {
+      "output_hash": "5c4ab3fb672801ef974297260456964b43ab7cbb0afcf923e14676c2b8a96e7c",
+      "primary_output": "findings/rocba-memory.windows_netscan.json",
+      "stderr": "findings/rocba-memory.windows_netscan.volatility.stderr.txt",
+      "stderr_hash": "42dff4c93e3122a9a5a7d8ecb64509fac9f4e731938c9ddcca00dd650dc0b09f",
+      "stdout": "findings/rocba-memory.windows_netscan.volatility.stdout.txt",
+      "stdout_hash": "5c4ab3fb672801ef974297260456964b43ab7cbb0afcf923e14676c2b8a96e7c"
+    },
+    "raw_output_returned": false,
+    "session_id": "sess-20260615T073626Z-5118ee34",
+    "tool_integrity": {
+      "actual_sha256": "01855f549c6169aa1044c8c2283400a34c13ab9b71824781ff830c3a74fbbf2f",
+      "executable": "vol",
+      "expected_sha256": null,
+      "resolved_executable": "vol",
+      "verified": true,
+      "warnings": []
+    },
+    "tool_name": "volatility",
+    "typed_tool": "memory",
+    "warnings": []
+  },
+  {
+    "case_id": "BLITZ-ROCBA-MEMORY-E01",
+    "evidence_id": "rocba-memory",
+    "execution": {
+      "command": [
+        "vol",
+        "-q",
+        "--symbol-dirs",
+        "[outside-session-root]/volatility_symbols",
+        "-f",
+        "[outside-session-root]/Rocba-Memory.raw",
+        "-r",
+        "json",
+        "windows.malfind"
+      ],
+      "command_args_hash": "c06ee61720e0f6280f78c0d5a67b3b127de09cb5936196a0d0af27cc6759e878",
+      "duration_ms": 295074,
+      "executable_name": "vol",
+      "exit_code": 0,
+      "timed_out": false
+    },
+    "outputs": {
+      "output_hash": "ce6cc2a5675a8e1e2709c561fa497b673ef4062366663e07b67bfa4a44f85e79",
+      "primary_output": "findings/rocba-memory.windows_malfind.json",
+      "stderr": "findings/rocba-memory.windows_malfind.volatility.stderr.txt",
+      "stderr_hash": "df834ef59681ae632e8cae6f47d3ed440978f39f933a9e52dfbda3194863025e",
+      "stdout": "findings/rocba-memory.windows_malfind.volatility.stdout.txt",
+      "stdout_hash": "ce6cc2a5675a8e1e2709c561fa497b673ef4062366663e07b67bfa4a44f85e79"
+    },
+    "raw_output_returned": false,
+    "session_id": "sess-20260615T073626Z-5118ee34",
+    "tool_integrity": {
+      "actual_sha256": "01855f549c6169aa1044c8c2283400a34c13ab9b71824781ff830c3a74fbbf2f",
+      "executable": "vol",
+      "expected_sha256": null,
+      "resolved_executable": "vol",
+      "verified": true,
+      "warnings": []
+    },
+    "tool_name": "volatility",
+    "typed_tool": "memory",
+    "warnings": []
+  },
+  {
+    "case_id": "BLITZ-ROCBA-MEMORY-E01",
+    "evidence_id": "rocba-cdrive-e01",
+    "execution": {
+      "command": [
+        "log2timeline.py",
+        "--logfile",
+        "timelines/rocba-cdrive-e01.log2timeline.log.gz",
+        "--storage-file",
+        "timelines/rocba-cdrive-e01.plaso",
+        "--partitions=all",
+        "--vss_stores=none",
+        "--no_vss",
+        "--unattended",
+        "--parsers",
+        "winevtx,prefetch,lnk,text/setupapi,sqlite/windows_timeline,esedb/srum,winreg/amcache,winreg/bam,winreg/windows_usbstor_devices,winreg/windows_usb_devices",
+        "[outside-session-root]/rocba-cdrive.e01"
+      ],
+      "command_args_hash": "9d52cf1a5deed398c12d642218fc82ef0afeca6b609745298ceab41bc4be252a",
+      "duration_ms": 23340,
+      "executable_name": "log2timeline.py",
+      "exit_code": 1,
+      "timed_out": false
+    },
+    "outputs": {
+      "output_hash": null,
+      "primary_output": "timelines/rocba-cdrive-e01.plaso",
+      "stderr": "timelines/rocba-cdrive-e01.log2timeline.stderr.txt",
+      "stderr_hash": "36666bdb9f744a3f135ffcb081f17cf002ce706bd74db94952966b92fb810400",
+      "stdout": "timelines/rocba-cdrive-e01.log2timeline.stdout.txt",
+      "stdout_hash": "b8e907dfc3a4bc5f2a2e8331a903e123da2937321984e395794dac8aa810461d"
+    },
+    "raw_output_returned": false,
+    "session_id": "sess-20260615T073626Z-5118ee34",
+    "tool_integrity": {
+      "actual_sha256": "4247ee34b1a072687322e0b7fce14248a33a053780721bf992cebbb57db1b136",
+      "executable": "log2timeline.py",
+      "expected_sha256": null,
+      "resolved_executable": "log2timeline.py",
+      "verified": true,
+      "warnings": []
+    },
+    "tool_name": "log2timeline",
+    "typed_tool": "timeline",
+    "warnings": []
+  },
+  {
+    "case_id": "BLITZ-ROCBA-MEMORY-E01",
+    "evidence_id": "rocba-cdrive-e01",
+    "execution": {
+      "command": [
+        "python3",
+        "[outside-session-root]/tsk_e01_triage.py",
+        "--evidence",
+        "[outside-session-root]/rocba-cdrive.e01",
+        "--output",
+        "findings/rocba-cdrive-e01.disk_triage.json",
+        "--max-partitions",
+        "8",
+        "--max-entries",
+        "3000000",
+        "--max-seconds-per-partition",
+        "1800"
+      ],
+      "command_args_hash": "0aff7e43ca86957692bd843f71a0c3b115815be29f0224dc60e1644e4b3072b5",
+      "duration_ms": 239569,
+      "executable_name": "python3",
+      "exit_code": 0,
+      "timed_out": false
+    },
+    "outputs": {
+      "output_hash": "9f9d2c6387d0f0ae26558b77ccadba2734655808e047279456395a4591ed4965",
+      "primary_output": "findings/rocba-cdrive-e01.disk_triage.json",
+      "stderr": "findings/rocba-cdrive-e01.disk_triage.disk_triage.stderr.txt",
+      "stderr_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "findings/rocba-cdrive-e01.disk_triage.disk_triage.stdout.txt",
+      "stdout_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "raw_output_returned": false,
+    "session_id": "sess-20260615T073626Z-5118ee34",
+    "tool_integrity": {
+      "actual_sha256": "e1efa562c2cc2e35521a5c9c9b9939921001ff8ca9708a13ef15ace68cc2ccd7",
+      "executable": "python3",
+      "expected_sha256": null,
+      "resolved_executable": "python3.12",
+      "verified": true,
+      "warnings": []
+    },
+    "tool_name": "disk_triage",
+    "typed_tool": "disk_triage",
+    "warnings": []
+  }
+]
