@@ -6,7 +6,6 @@
 |---|---|
 | Public repository | [`github.com/rienman88/Blitz-DFIR`](https://github.com/rienman88/Blitz-DFIR) |
 | License | [`LICENSE`](LICENSE) (Apache 2.0) |
-| README with setup of writable Volatility symbol cache | This file — [Installation](#installation) |
 | Feature description | [Overview](#overview) |
 | Demonstration video | [YouTube — Blitz DFIR Demo 2026](https://www.youtube.com/watch?v=KVRA7pNhdnU&t=93s) |
 | Architecture diagrams | [`This file`](https://github.com/rienman88/Blitz-DFIR/blob/main/docs/Architecture%20And%20MCP%20Commands)
@@ -17,6 +16,14 @@
 | Rocba LLM agent logs | [`submission/rocba_llm_agent_logs`](submission/rocba_llm_agent_logs/) |
 | Devpost Blitz DFIR | [`devpost post`](https://devpost.com/software/blitz-dfir?ref_content=user-portfolio&ref_feature=in_progress) |
 | Ways to run Blitz DFIR | [`How to run `](https://github.com/rienman88/Blitz-DFIR/blob/main/docs/Ways%20to%20run%20Blitz%20DFIR.md) |
+
+# Guides
+|---|---|
+| Installation and setup of writable Volatility symbol cache | This file — [Installation](https://github.com/rienman88/Blitz-DFIR/edit/main/README.md) |
+| Helpful Commands | [`Commands`](https://github.com/rienman88/Blitz-DFIR/blob/main/docs/Helpful%20commands) |
+| LLM Configuration | [LLM](https://github.com/rienman88/Blitz-DFIR/blob/main/docs/LLM%20Configurations) |
+| Everything about Blitz DFIR results | [`Files expected to generate after every successful run`](https://github.com/rienman88/Blitz-DFIR/blob/main/docs/Where%20%20to%20find%20Blitz%20DFIR%20generated%20results) |
+| Troubleshooting Guide | [Common Issues](https://github.com/rienman88/Blitz-DFIR/blob/main/docs/Common%20Issues) |
 
 # Blitz DFIR
 
