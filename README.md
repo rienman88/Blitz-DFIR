@@ -254,8 +254,8 @@ evidence_root: external
 
 That allows absolute evidence paths while keeping output under `/cases/<CASE>/output`.
 
-```IMPORTANT NOTICE : If you ran into this problem while using the commands given below - "preflight_failed=workdir_not_found"
-
+IMPORTANT NOTICE : If you ran into this problem while using the commands given below - "preflight_failed=workdir_not_found"
+```
 (.venv) sansforensics@siftworkstation: ~/src/Blitz-DFIR
 $ cd /home/sansforensics/src/Blitz-DFIR
 CASE=BLITZ-MY-MEMORY \
