@@ -17,7 +17,7 @@
 | Devpost Blitz DFIR | [`devpost post`](https://devpost.com/software/blitz-dfir?ref_content=user-portfolio&ref_feature=in_progress) |
 | Ways to run Blitz DFIR | [`How to run `](https://github.com/rienman88/Blitz-DFIR/blob/main/docs/Ways%20to%20run%20Blitz%20DFIR.md) |
 
-# Guides
+| Guides | Location |
 |---|---|
 | Installation and setup of writable Volatility symbol cache | This file — [Installation](https://github.com/rienman88/Blitz-DFIR/edit/main/README.md) |
 | Helpful Commands | [`Commands`](https://github.com/rienman88/Blitz-DFIR/blob/main/docs/Helpful%20commands) |
