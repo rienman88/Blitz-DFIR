@@ -281,6 +281,8 @@ Blitz-DFIR/
 Blitz_DFIR -> /home/sansforensics/src/Blitz-DFIR
 ````
 
+# WAYS TO RUN BLITZ DFIR
+
 ## Run One Dataset By Script
 
 No LLM:
