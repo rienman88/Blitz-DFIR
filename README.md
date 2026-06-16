@@ -254,6 +254,33 @@ evidence_root: external
 
 That allows absolute evidence paths while keeping output under `/cases/<CASE>/output`.
 
+```IMPORTANT NOTICE : If you ran into this problem while using the commands given below - "preflight_failed=workdir_not_found"
+
+(.venv) sansforensics@siftworkstation: ~/src/Blitz-DFIR
+$ cd /home/sansforensics/src/Blitz-DFIR
+CASE=BLITZ-MY-MEMORY \
+EVIDENCE1_PATH="/home/sansforensics/Desktop/cases/BLITZ-ROCBA-MEMORY/raw/Rocba-Memory.raw" \
+EVIDENCE1_TYPE=MEMORY \
+EVIDENCE1_ID=memory-01 \
+bash scripts/sift_run_external_evidence_no_llm.sh
+preflight_failed=workdir_not_found
+
+```
+the symlink wasn't created yet. Run this first, before the pipeline command:
+```
+ln -s /home/sansforensics/src/Blitz-DFIR /home/sansforensics/src/Blitz_DFIR
+```
+
+Verify it exists:
+```
+ls -la /home/sansforensics/src/
+```
+you should see something like this
+```
+Blitz-DFIR/
+Blitz_DFIR -> /home/sansforensics/src/Blitz-DFIR
+````
+
 ## Run One Dataset By Script
 
 No LLM:
