@@ -6,7 +6,7 @@
 |---|---|
 | Public repository | [`github.com/rienman88/Blitz-DFIR`](https://github.com/rienman88/Blitz-DFIR) |
 | License | [`LICENSE`](LICENSE) (Apache 2.0) |
-| README with setup | This file — [Installation](#installation) |
+| README with setup of writable Volatility symbol cache | This file — [Installation](#installation) |
 | Try it out | [`09_TRY_IT_OUT_INSTRUCTIONS.md`](submission/packet/09_TRY_IT_OUT_INSTRUCTIONS.md) |
 | Feature description | [Overview](#overview) |
 | Demonstration video | [YouTube — Blitz DFIR Demo 2026](https://www.youtube.com/watch?v=KVRA7pNhdnU&t=93s) |
