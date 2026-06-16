@@ -1,3 +1,19 @@
+JUDGES: Submission Compliance Quick-Reference
+All required components are present. This table tells you exactly where to find each one.
+
+Requirement	Location
+Public repository	https://github.com/rienman88/Blitz-DFIR
+License	LICENSE (Apache 2.0)
+Installation and Setup of writable Volatility symbol cache - This file (Readme)
+Try it out (https://github.com/rienman88/Blitz-DFIR/blob/main/submission/packet/09_TRY_IT_OUT_INSTRUCTIONS.md)
+Feature description	Overview https://github.com/rienman88/Blitz-DFIR/edit/main/README.md
+Demonstration video	[YouTube — ](https://www.youtube.com/watch?v=KVRA7pNhdnU&t=93s)
+Architecture diagrams	https://github.com/rienman88/Blitz-DFIR/blob/main/docs/ARCHITECTURE.md
+Datasets https://github.com/rienman88/Blitz-DFIR/blob/main/docs/DATASETS.md
+Investigation conclusion https://github.com/rienman88/Blitz-DFIR/blob/main/submission/packet/01_INVESTIGATION_CONCLUSION.md
+Run Summary https://github.com/rienman88/Blitz-DFIR/blob/main/submission/packet/02_RUN_SUMMARY_COMPACT.json
+Rocba llm Agent logs https://github.com/rienman88/Blitz-DFIR/tree/main/submission/rocba_llm_agent_logs
+
 # Blitz DFIR
 
 Blitz DFIR is an autonomous digital forensics and incident response pipeline for SANS SIFT.
