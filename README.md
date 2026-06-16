@@ -5,7 +5,7 @@
 
 | Requirement | Location |
 |--------------|----------|
-| Public repository | `github.com/rienman88/Blitz-DFIR` |
+| Public repository | [`github.com/rienman88/Blitz-DFIR`](https://github.com/rienman88/Blitz-DFIR) |
 | License | [`LICENSE`](LICENSE) (Apache 2.0) |
 | README with setup | This file — [Installation](README.md) |
 | Try it out | [`09_TRY_IT_OUT_INSTRUCTIONS.md`](submission/packet/09_TRY_IT_OUT_INSTRUCTIONS.md) |
@@ -16,16 +16,6 @@
 | Investigation conclusion | [`01_INVESTIGATION_CONCLUSION.md`](submission/packet/01_INVESTIGATION_CONCLUSION.md) |
 | Run summary | [`02_RUN_SUMMARY_COMPACT.json`](submission/packet/02_RUN_SUMMARY_COMPACT.json) |
 | Rocba LLM agent logs | [`submission/rocba_llm_agent_logs`](submission/rocba_llm_agent_logs/) |
-
-**Academic documentation:** [`docs/DATASETS.md`](docs/DATASETS.md), [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)
-
-**Public Repository**
-
-`https://github.com/rienman88/Blitz-DFIR`
-
-**Demonstration Video**
-
-`https://www.youtube.com/watch?v=KVRA7pNhdnU&t=93s`
 
 ```
 
