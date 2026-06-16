@@ -1,0 +1,23 @@
+Blitz DFIR
+Copyright 2026 Rienart Ryan Ilagan
+
+Licensed under the Apache License, Version 2.0. See LICENSE.
+
+Blitz DFIR is an original evidence-safety, orchestration, audit, and reporting
+layer for DFIR workflows. It does not bundle raw forensic tools, commercial
+agent runtimes, SANS SIFT Workstation, Protocol SIFT, Claude Code, OpenClaw,
+Ollama, or forensic evidence datasets.
+
+Third-party dependency and external-tool license information is maintained in:
+
+    THIRD_PARTY_LICENSES.md
+
+Names such as SANS, SIFT Workstation, Protocol SIFT, Claude Code, OpenClaw,
+Ollama, Volatility, Plaso/log2timeline, Wireshark, YARA, The Sleuth Kit, and
+Chainsaw are the property of their respective owners. Reference to those names
+does not imply endorsement, sponsorship, affiliation, or redistribution.
+
+Protocol SIFT is referenced as an external, optional workflow/integration path.
+Blitz DFIR does not include Protocol SIFT files or modify Protocol SIFT. If a
+future package copies or redistributes Protocol SIFT material, confirm and
+comply with the upstream license or obtain permission first.

@@ -1,0 +1,11 @@
+runtime:
+  target_platform: "SANS SIFT Workstation"
+  python: "3.11+"
+  session_output_root: "output"
+
+llm:
+  provider: "openai-compatible"
+  base_url_env: "LLM_BASE_URL"
+  api_key_env: "LLM_API_KEY"
+  model_env: "LLM_MODEL"
+  raw_evidence_allowed: false

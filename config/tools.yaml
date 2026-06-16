@@ -1,0 +1,53 @@
+tools:
+  log2timeline:
+    allowed: true
+    executable: "log2timeline.py"
+    version: null
+    expected_sha256: null
+    timeout_seconds: 7200
+  psort:
+    allowed: true
+    executable: "psort.py"
+    version: null
+    expected_sha256: null
+    timeout_seconds: 900
+  disk_triage:
+    allowed: true
+    executable: "python3"
+    version: null
+    expected_sha256: null
+    timeout_seconds: 7200
+  volatility:
+    allowed: true
+    executable: "vol"
+    version: null
+    expected_sha256: null
+    symbols_dir: "/cases/volatility_symbols"
+    allowed_plugins:
+      - "windows.pslist"
+      - "windows.pstree"
+      - "windows.cmdline"
+      - "windows.psscan"
+      - "windows.netscan"
+      - "windows.malfind"
+  chainsaw:
+    allowed: true
+    executable: "chainsaw"
+    version: null
+    expected_sha256: null
+  tshark:
+    allowed: true
+    executable: "tshark"
+    version: null
+    expected_sha256: null
+  yara:
+    allowed: true
+    executable: "yara"
+    version: null
+    expected_sha256: null
+    allowed_rules: []
+  strings:
+    allowed: true
+    executable: "strings"
+    version: null
+    expected_sha256: null

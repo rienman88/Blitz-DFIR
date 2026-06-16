@@ -1,0 +1,9 @@
+confidence:
+  artifact_support_weight: 0.30
+  temporal_consistency_weight: 0.20
+  parser_quality_weight: 0.20
+  cross_source_validation_weight: 0.20
+  multi_tool_agreement_weight: 0.10
+  contradiction_penalty_weight: 0.30
+  signal_degradation_penalty_weight: 0.20
+

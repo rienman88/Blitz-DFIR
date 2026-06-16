@@ -1,0 +1,2 @@
+"""Safe SIFT tool adapters."""
+

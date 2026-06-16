@@ -1,0 +1,110 @@
+evidences
+
+Yes. This is useful submission evidence, but present it correctly:
+
+Blitz enforces case separation by requiring evidence inputs and generated outputs to live in separate roots. When output_root was accidentally placed inside evidence_root, Blitz refused to start before creating a session.
+
+That is strong proof of evidence-protection design.
+
+Save it as a small proof artifact, not as a full run result.
+
+On SIFT, run:
+
+CASE=BLITZ-ROCBA-MEMORY
+PROOF_DIR=/cases/$CASE/proof_exports
+mkdir -p "$PROOF_DIR"
+
+cat > "$PROOF_DIR/evidence_output_separation_proof.txt" <<'EOF'
+Blitz DFIR Evidence/Output Separation Proof
+
+Case:
+BLITZ-ROCBA-MEMORY
+
+Observed behavior:
+Blitz refused to start when output_root was configured inside evidence_root.
+
+Security meaning:
+Generated analysis outputs, reports, audit files, and findings are not allowed to be written inside the evidence root.
+
+Failure observed:
+blitz_dfir.exceptions.EvidenceSecurityError: output root cannot be inside evidence root
+
+Why this matters:
+This prevents accidental contamination of the evidence directory and supports forensic evidence separation.
+EOF
+
+sha256sum "$PROOF_DIR/evidence_output_separation_proof.txt" \
+  > "$PROOF_DIR/evidence_output_separation_proof.txt.sha256"
+
+ls -lh "$PROOF_DIR"/evidence_output_separation_proof.txt*
+cat "$PROOF_DIR/evidence_output_separation_proof.txt"
+cat "$PROOF_DIR/evidence_output_separation_proof.txt.sha256"
+Then copy to host:
+
+scp sansforensics@192.168.88.133:/cases/BLITZ-ROCBA-MEMORY/proof_exports/evidence_output_separation_proof.txt "C:\Users\rienm\Desktop\Personal Projects\Cyber Security automation\app_backups\Blitz_DFIR\Blitz_DFIR_Proof\"
+
+scp sansforensics@192.168.88.133:/cases/BLITZ-ROCBA-MEMORY/proof_exports/evidence_output_separation_proof.txt.sha256 "C:\Users\rienm\Desktop\Personal Projects\Cyber Security automation\app_backups\Blitz_DFIR\Blitz_DFIR_Proof\"
+If you want stronger proof, also save the actual launcher tail:
+
+CASE=BLITZ-ROCBA-MEMORY
+RUN=/cases/$CASE/analysis/runs/20260603T134206Z_rocba_memory_no_llm
+PROOF_DIR=/cases/$CASE/proof_exports
+mkdir -p "$PROOF_DIR"
+
+{
+  echo "===== Blitz Evidence/Output Separation Failure Tail ====="
+  tail -n 60 "$RUN/launcher.log"
+  echo
+  echo "===== Current Corrected Manifest ====="
+  cat /cases/$CASE/case.yaml
+} > "$PROOF_DIR/evidence_output_separation_command_capture.txt"
+
+sha256sum "$PROOF_DIR/evidence_output_separation_command_capture.txt" \
+  > "$PROOF_DIR/evidence_output_separation_command_capture.txt.sha256"
+Then copy those two files too.
+
+This proof belongs in the submission under:
+
+Evidence Integrity / Anti-Spoliation / Folder Separation
+
+Use this wording:
+
+During Rocba memory setup, Blitz rejected a misconfigured manifest because generated outputs were inside the evidence root. This demonstrates that Blitz enforces separation between evidence storage and generated analysis artifacts before any analysis session is created.
+
+
+[active Blitz/SIFT processes]
+no active Blitz/SIFT analysis process matched
+
+[latest run bundle]
+/cases/BLITZ-ROCBA-MEMORY/analysis/runs/20260603T134206Z_rocba_memory_no_llm
+session_path=not_created_yet
+launcher_tail:
+  File "/home/sansforensics/src/Blitz_DFIR/app.py", line 246, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/home/sansforensics/src/Blitz_DFIR/app.py", line 174, in main
+    result = run_analysis(
+             ^^^^^^^^^^^^^
+  File "/home/sansforensics/src/Blitz_DFIR/blitz_dfir/pipeline/analyze.py", line 209, in run_analysis
+    session = load_existing_session(manifest, resume_session_path) if resume_session_path else create_session(manifest)
+                                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sansforensics/src/Blitz_DFIR/blitz_dfir/core/session.py", line 27, in create_session
+    raise EvidenceSecurityError("output root cannot be inside evidence root")
+blitz_dfir.exceptions.EvidenceSecurityError: output root cannot be inside evidence root
+
+[session]
+session not created yet for latest run bundle
+
+[progress]
+source: latest run bundle before session creation
+status: INTERRUPTED
+message: Blitz DFIR process interrupted before a session was created. Check launcher_tail above for the exact failing step. If you want to continue processing, reinitiate the process after fixing the cause.
+
+[operator result]
+Blitz DFIR Process did not complete cleanly: interrupted_before_session_creation
+sansforensics@siftworkstation: ~/src/Blitz_DFIR
+
+++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
