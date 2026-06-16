@@ -1,4 +1,0 @@
-# Judge Q&A
-
-Pending.
-
