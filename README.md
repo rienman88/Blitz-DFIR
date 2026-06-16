@@ -94,7 +94,7 @@ On SIFT:
 
 ```bash
 cd /home/sansforensics/src
-git clone <your-github-url> Blitz_DFIR
+git clone https://github.com/rienman88/Blitz-DFIR
 cd /home/sansforensics/src/Blitz_DFIR
 
 python3 -m venv .venv
