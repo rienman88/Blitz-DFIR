@@ -95,7 +95,7 @@ On SIFT:
 ```bash
 cd /home/sansforensics/src
 git clone https://github.com/rienman88/Blitz-DFIR
-cd /home/sansforensics/src/Blitz_DFIR
+cd /home/sansforensics/src/Blitz-DFIR
 
 python3 -m venv .venv
 . .venv/bin/activate
@@ -106,7 +106,7 @@ python -m pip install -r requirements.txt
 Quick health check:
 
 ```bash
-cd /home/sansforensics/src/Blitz_DFIR
+cd /home/sansforensics/src/Blitz-DFIR
 .venv/bin/python -m compileall -q app.py blitz_dfir tests
 .venv/bin/python -m pytest -q
 ```
@@ -259,7 +259,7 @@ That allows absolute evidence paths while keeping output under `/cases/<CASE>/ou
 No LLM:
 
 ```bash
-cd /home/sansforensics/src/Blitz_DFIR
+cd /home/sansforensics/src/Blitz-DFIR
 
 CASE=BLITZ-MY-MEMORY \
 EVIDENCE1_PATH="/absolute/path/to/memory.raw" \
@@ -271,7 +271,7 @@ bash scripts/sift_run_external_evidence_no_llm.sh
 With Ollama:
 
 ```bash
-cd /home/sansforensics/src/Blitz_DFIR
+cd /home/sansforensics/src/Blitz-DFIR
 
 CASE=BLITZ-MY-MEMORY \
 EVIDENCE1_PATH="/absolute/path/to/memory.raw" \
@@ -300,7 +300,7 @@ If no SHA is provided, Blitz computes SHA256 and writes it into `/cases/<CASE>/c
 No LLM:
 
 ```bash
-cd /home/sansforensics/src/Blitz_DFIR
+cd /home/sansforensics/src/Blitz-DFIR
 
 CASE=BLITZ-MY-MEMORY-E01 \
 EVIDENCE1_PATH="/absolute/path/to/memory.raw" \
@@ -315,7 +315,7 @@ bash scripts/sift_run_external_evidence_no_llm.sh
 With Ollama:
 
 ```bash
-cd /home/sansforensics/src/Blitz_DFIR
+cd /home/sansforensics/src/Blitz-DFIR
 
 CASE=BLITZ-MY-MEMORY-E01 \
 EVIDENCE1_PATH="/absolute/path/to/memory.raw" \
@@ -348,7 +348,7 @@ BLITZ_SQLITE_NORMALIZATION_CHECKPOINT_INTERVAL=100000
 Use this when you do not want the helper script. Replace the case name, evidence path, evidence type, and objective.
 
 ```bash
-cd /home/sansforensics/src/Blitz_DFIR
+cd /home/sansforensics/src/Blitz-DFIR
 
 CASE=BLITZ-MANUAL-ONE
 CASE_ROOT="/cases/${CASE}"
@@ -374,7 +374,7 @@ EOF
 .venv/bin/python app.py analyze \
   --manifest "${CASE_ROOT}/case.yaml" \
   --mode timeline \
-  --tool-config /home/sansforensics/src/Blitz_DFIR/config/tools.yaml \
+  --tool-config /home/sansforensics/src/Blitz-DFIR/config/tools.yaml \
   --case-objective "Analyze the selected evidence for evidence-backed execution artifacts, persistence, credential activity, user activity, temporal gaps, and unknowns while avoiding unsupported conclusions." \
   --psort-profile triage \
   --windows-artifact-profile windows-light \
@@ -407,7 +407,7 @@ export LLM_RESPONSE_FORMAT_JSON=1
 This is the same pattern with two evidence records:
 
 ```bash
-cd /home/sansforensics/src/Blitz_DFIR
+cd /home/sansforensics/src/Blitz-DFIR
 
 CASE=BLITZ-MANUAL-TWO
 CASE_ROOT="/cases/${CASE}"
@@ -454,7 +454,7 @@ BLITZ_SQLITE_NORMALIZATION_CHECKPOINT_INTERVAL=100000 \
 .venv/bin/python app.py analyze \
   --manifest "${CASE_ROOT}/case.yaml" \
   --mode timeline \
-  --tool-config /home/sansforensics/src/Blitz_DFIR/config/tools.yaml \
+  --tool-config /home/sansforensics/src/Blitz-DFIR/config/tools.yaml \
   --case-objective "Analyze the selected evidence together for evidence-backed suspicious processes, execution artifacts, persistence, credential activity, user activity, temporal gaps, cross-source correlation, and unknowns while avoiding unsupported conclusions." \
   --enable-reasoning \
   --psort-profile triage \
@@ -476,7 +476,7 @@ CASE="${CASE}" bash scripts/blitz_status.sh
 By script:
 
 ```bash
-cd /home/sansforensics/src/Blitz_DFIR
+cd /home/sansforensics/src/Blitz-DFIR
 CASE=BLITZ-MY-MEMORY-E01 bash scripts/blitz_status.sh
 ```
 
@@ -537,7 +537,7 @@ echo "${RESUME_SESSION}"
 Resume manually:
 
 ```bash
-cd /home/sansforensics/src/Blitz_DFIR
+cd /home/sansforensics/src/Blitz-DFIR
 
 CASE=BLITZ-MY-MEMORY-E01
 RESUME_SESSION="$(ls -td "/cases/${CASE}/output"/sess-* 2>/dev/null | head -n 1)"
@@ -546,7 +546,7 @@ RESUME_SESSION="$(ls -td "/cases/${CASE}/output"/sess-* 2>/dev/null | head -n 1)
   --manifest "/cases/${CASE}/case.yaml" \
   --resume-session "${RESUME_SESSION}" \
   --mode timeline \
-  --tool-config /home/sansforensics/src/Blitz_DFIR/config/tools.yaml \
+  --tool-config /home/sansforensics/src/Blitz-DFIR/config/tools.yaml \
   --case-objective "Resume analysis of the selected evidence using existing completed tool and parser outputs where available." \
   --enable-reasoning \
   --psort-profile triage \
@@ -755,7 +755,7 @@ MCP server launch:
 ```bash
 .venv/bin/python app.py mcp-serve \
   --manifest /cases/<CASE>/case.yaml \
-  --tool-config /home/sansforensics/src/Blitz_DFIR/config/tools.yaml
+  --tool-config /home/sansforensics/src/Blitz-DFIR/config/tools.yaml
 ```
 
 Short architecture flow:
@@ -783,15 +783,6 @@ Security boundaries:
 - Volatility plugins are allowlisted.
 - LLM receives bounded summaries, not raw evidence or raw tool output.
 - Audit events, progress state, session state, and artifact hashes are written for traceability.
-
-Useful architecture documents:
-
-```text
-docs/ARCHITECTURE.md
-docs/PROTOCOL_SIFT_INTEGRATION.md
-docs/DATASETS.md
-docs/ACCURACY_REPORT.md
-```
 
 Spoliation safety demo:
 
@@ -946,7 +937,7 @@ This removes generated run outputs for one case. It does not delete user evidenc
 Preview:
 
 ```bash
-cd /home/sansforensics/src/Blitz_DFIR
+cd /home/sansforensics/src/Blitz-DFIR
 CASE=BLITZ-MY-CASE bash scripts/sift_clean_generated_for_rerun.sh
 ```
 
@@ -961,7 +952,7 @@ APPLY=1 CASE=BLITZ-MY-CASE bash scripts/sift_clean_generated_for_rerun.sh
 Use before packaging or submitting code:
 
 ```bash
-cd /home/sansforensics/src/Blitz_DFIR
+cd /home/sansforensics/src/Blitz-DFIR
 .venv/bin/python -m compileall -q app.py blitz_dfir tests
 .venv/bin/python -m pytest -q
 ```
