@@ -1,20 +1,24 @@
 ```text
-JUDGES: Submission Compliance Quick-Reference
-All required components are present. This table tells you exactly where to find each one.
+## JUDGES: Submission Compliance Quick Reference
 
-| Requirement |	Location |
-|-------------|----------|
-| Public repository |	(https://github.com/rienman88/Blitz-DFIR) |
-| LICENSE | (Apache 2.0)|
-| Installation and Setup of writable Volatility symbol cache | This file (Readme) |
-| Try it out | (https://github.com/rienman88/Blitz-DFIR/blob/main/submission/packet/09_TRY_IT_OUT_INSTRUCTIONS.md)|
-| Feature description	Overview | (https://github.com/rienman88/Blitz-DFIR/edit/main/README.md)|
-| Demonstration video	| [YouTube — ](https://www.youtube.com/watch?v=KVRA7pNhdnU&t=93s) |
-| Architecture diagrams	| (https://github.com/rienman88/Blitz-DFIR/blob/main/docs/ARCHITECTURE.md) |
-| Datasets | (https://github.com/rienman88/Blitz-DFIR/blob/main/docs/DATASETS.md) |
-| Investigation conclusion | (https://github.com/rienman88/Blitz-DFIR/blob/main/submission/packet/01_INVESTIGATION_CONCLUSION.md) |
-| Run Summary | (https://github.com/rienman88/Blitz-DFIR/blob/main/submission/packet/02_RUN_SUMMARY_COMPACT.json) |
-| Rocba llm Agent logs | (https://github.com/rienman88/Blitz-DFIR/tree/main/submission/rocba_llm_agent_logs) |
+All required components are present. The table below provides direct references to each submission component.
+
+| Requirement | Location |
+|--------------|----------|
+| **Public Repository** | [Blitz-DFIR Repository](https://github.com/rienman88/Blitz-DFIR) |
+| **LICENSE** | Apache License 2.0 |
+| **Installation and Setup (including writable Volatility symbol cache)** | This README |
+| **Try It Out Instructions** | [09_TRY_IT_OUT_INSTRUCTIONS.md](submission/packet/09_TRY_IT_OUT_INSTRUCTIONS.md) |
+| **Feature Description / Overview** | [README.md](README.md) |
+| **Demonstration Video** | [YouTube Demonstration](https://www.youtube.com/watch?v=KVRA7pNhdnU&t=93s) |
+| **Architecture Diagrams** | [ARCHITECTURE.md](docs/ARCHITECTURE.md) |
+| **Datasets** | [DATASETS.md](docs/DATASETS.md) |
+| **Investigation Conclusion** | [01_INVESTIGATION_CONCLUSION.md](submission/packet/01_INVESTIGATION_CONCLUSION.md) |
+| **Run Summary** | [02_RUN_SUMMARY_COMPACT.json](submission/packet/02_RUN_SUMMARY_COMPACT.json) |
+| **Rocba LLM Agent Logs** | [rocba_llm_agent_logs](submission/rocba_llm_agent_logs/) |
+
+> **Note for Judges:**  
+> All artifacts, documentation, architecture diagrams, datasets, investigation outputs, and supporting materials referenced in the submission are publicly accessible through the repository.
 
 ```
 
