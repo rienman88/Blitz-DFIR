@@ -15,7 +15,7 @@
 | Investigation conclusion | [`01_INVESTIGATION_CONCLUSION.md`](submission/packet/01_INVESTIGATION_CONCLUSION.md) |
 | Run summary | [`02_RUN_SUMMARY_COMPACT.json`](submission/packet/02_RUN_SUMMARY_COMPACT.json) |
 | Rocba LLM agent logs | [`submission/rocba_llm_agent_logs`](submission/rocba_llm_agent_logs/) |
-| Devpost Blitz DFIR |  [`devpost post`] (https://devpost.com/software/blitz-dfir?ref_content=user-portfolio&ref_feature=in_progress)|
+| Devpost Blitz DFIR | [`devpost post`](https://devpost.com/software/blitz-dfir?ref_content=user-portfolio&ref_feature=in_progress) |
 
 # Blitz DFIR
 
