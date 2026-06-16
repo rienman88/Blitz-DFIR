@@ -12,7 +12,7 @@
 | Demonstration video | [YouTube — Blitz DFIR Demo 2026](https://www.youtube.com/watch?v=KVRA7pNhdnU&t=93s) |
 | Architecture diagrams | [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) |
 | Datasets | [`docs/DATASETS.md`](docs/DATASETS.md) |
-| Blitz-DFIR-Results (findings, audit, reports) | [`https://github.com/rienman88/Blitz-DFIR-Results/tree/main`|
+| Blitz-DFIR-Results | [`findings, audit, reports`](https://github.com/rienman88/Blitz-DFIR-Results/tree/main) |
 | Investigation conclusion | [`01_INVESTIGATION_CONCLUSION.md`](submission/packet/01_INVESTIGATION_CONCLUSION.md) |
 | Run summary | [`02_RUN_SUMMARY_COMPACT.json`](submission/packet/02_RUN_SUMMARY_COMPACT.json) |
 | Rocba LLM agent logs | [`submission/rocba_llm_agent_logs`](submission/rocba_llm_agent_logs/) |
