@@ -1,24 +1,31 @@
 ```text
-## JUDGES: Submission Compliance Quick Reference
+# JUDGES: Submission Compliance Quick-Reference
 
-All required components are present. The table below provides direct references to each submission component.
+> All required components are present. This table tells you exactly where to find each one.
 
 | Requirement | Location |
 |--------------|----------|
-| **Public Repository** | [Blitz-DFIR Repository](https://github.com/rienman88/Blitz-DFIR) |
-| **LICENSE** | Apache License 2.0 |
-| **Installation and Setup (including writable Volatility symbol cache)** | This README |
-| **Try It Out Instructions** | [09_TRY_IT_OUT_INSTRUCTIONS.md](submission/packet/09_TRY_IT_OUT_INSTRUCTIONS.md) |
-| **Feature Description / Overview** | [README.md](README.md) |
-| **Demonstration Video** | [YouTube Demonstration](https://www.youtube.com/watch?v=KVRA7pNhdnU&t=93s) |
-| **Architecture Diagrams** | [ARCHITECTURE.md](docs/ARCHITECTURE.md) |
-| **Datasets** | [DATASETS.md](docs/DATASETS.md) |
-| **Investigation Conclusion** | [01_INVESTIGATION_CONCLUSION.md](submission/packet/01_INVESTIGATION_CONCLUSION.md) |
-| **Run Summary** | [02_RUN_SUMMARY_COMPACT.json](submission/packet/02_RUN_SUMMARY_COMPACT.json) |
-| **Rocba LLM Agent Logs** | [rocba_llm_agent_logs](submission/rocba_llm_agent_logs/) |
+| Public repository | `github.com/rienman88/Blitz-DFIR` |
+| License | [`LICENSE`](LICENSE) (Apache 2.0) |
+| README with setup | This file — [Installation](README.md) |
+| Try it out | [`09_TRY_IT_OUT_INSTRUCTIONS.md`](submission/packet/09_TRY_IT_OUT_INSTRUCTIONS.md) |
+| Feature description | [Overview](README.md) |
+| Demonstration video | [YouTube — Blitz DFIR Demo 2026](https://www.youtube.com/watch?v=KVRA7pNhdnU&t=93s) |
+| Architecture diagrams | [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) |
+| Datasets | [`docs/DATASETS.md`](docs/DATASETS.md) |
+| Investigation conclusion | [`01_INVESTIGATION_CONCLUSION.md`](submission/packet/01_INVESTIGATION_CONCLUSION.md) |
+| Run summary | [`02_RUN_SUMMARY_COMPACT.json`](submission/packet/02_RUN_SUMMARY_COMPACT.json) |
+| Rocba LLM agent logs | [`submission/rocba_llm_agent_logs`](submission/rocba_llm_agent_logs/) |
 
-> **Note for Judges:**  
-> All artifacts, documentation, architecture diagrams, datasets, investigation outputs, and supporting materials referenced in the submission are publicly accessible through the repository.
+**Academic documentation:** [`docs/DATASETS.md`](docs/DATASETS.md), [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)
+
+**Public Repository**
+
+`https://github.com/rienman88/Blitz-DFIR`
+
+**Demonstration Video**
+
+`https://www.youtube.com/watch?v=KVRA7pNhdnU&t=93s`
 
 ```
 
