@@ -1,28 +1,25 @@
-Because forensic tools speak different languages. Blitz-DFIR transforms their outputs into typed evidence objects, preserves provenance and uncertainty, correlates findings across artifacts, and produces repeatable, evidence-driven investigations without coupling investigative logic to specific tools.
+Blitz-DFIR transforms fragmented forensic outputs into repeatable, traceable, evidence-driven investigations by correlating artifacts, preserving uncertainty, and maintaining trust under uncertainty while keeping humans as the final authority.
 
 # Problem #1: Fragmented Evidence
 ```
-Tool A
-Tool B
-Tool C
-    ↓
-Glue outputs together
-
-Traditional DFIR workflows often produce:
+Modern investigations rely on many forensic tools, each producing different outputs and formats.
+This often results in:
 
 isolated artifacts;
-different output formats;
 disconnected timelines;
 manual correlation;
-analyst-specific interpretations.
+analyst-specific workflows;
+inconsistent interpretations.
 ```
-Blitz-DFIR is not a tool wrapper. It provides an evidence-driven investigation pipeline:
+## Blitz-DFIR does more than run tools.
 ```
+It transforms fragmented evidence into an evidence-driven investigation pipeline:
+
 Evidence
     ↓
 Approved Forensic Tools
     ↓
-Typed Evidence Model
+Normalization and Typed Evidence Model
     ↓
 Correlation and Timeline Analysis
     ↓
@@ -36,31 +33,29 @@ Human Decision
 
 Instead of reasoning over:
 
-stdout text
-CSV files
-JSON blobs
-XML outputs
+stdout text;
+CSV files;
+JSON blobs;
+XML outputs;
 
-Blitz reasons over normalized evidence and relationships.
-The value is not running tools.
-The value is transforming fragmented artifacts into a structured, evidence-driven investigation.
+Blitz-DFIR reasons over normalized evidence and relationships.
+
+The value is not running tools. The value is transforming fragmented artifacts into structured investigations.
 ```
 
-# Problem #2: Fragmented Investigations and Loss of Context
+# Problem #2: Loss of Context Across Artifacts
 ```
-Problem #2: Loss of Context Across Artifacts
+Individual tools only provide pieces of the story.
 
-Traditional DFIR tools are excellent at extracting individual artifacts:
+For example:
 
 Volatility reveals memory artifacts.
 Plaso reconstructs timelines.
-Chainsaw detects suspicious events.
+Chainsaw identifies suspicious events.
 Browser artifacts show downloads.
-YARA identifies malware indicators.
+YARA detects malware indicators.
 
-However, each tool provides only part of the story.
-
-The analyst is responsible for manually connecting:
+The analyst must mentally connect:
 
 Suspicious PowerShell execution
 +
@@ -72,115 +67,129 @@ Network activity
 +
 Timeline events
 
-This correlation is often performed mentally, making investigations:
+This process is:
+
 time-consuming;
 analyst-dependent;
 difficult to reproduce;
 prone to missed relationships.
 ```
-Blitz-DFIR transforms extracted artifacts into a common evidence model and correlates them into an investigation
+## Blitz-DFIR correlates evidence into:
 ```
-This enables:
+timelines;
+attack stages;
+suspicious findings;
+contradictions;
+investigation guidance.
 
-cross-artifact correlation;
-timeline reconstruction;
-suspicion scoring;
-attack-stage context;
-contradiction analysis;
-structured findings.
-
-The result is an investigation-centric workflow, where evidence is analyzed as a connected story rather than as isolated tool outputs.
+Traditional tools extract artifacts. Blitz connects them into an investigation.
 ```
 
 # Problem #3: False Certainty and Hidden Unknowns
 ```
-Traditional workflows often focus on findings:
+Traditional workflows focus on findings:
+
 "Here is what we found."
-But investigations are equally dependent on what is missing, uncertain, or contradictory.
+
+But investigations also depend on what is:
+
+missing;
+uncertain;
+contradictory;
+unsupported.
 ```
-Blitz preserves uncertainty throughout the pipeline.
+## Blitz-DFIR preserves uncertainty throughout the investigation.
 ```
 Every finding maintains:
 
 Provenance
-Source evidence
-Tool and parser used
-Commands executed
-Audit chain
-Validation State
-Successful extraction
-Partial extraction
-Parser failures
-Missing artifacts
+source evidence;
+tools and parsers used;
+commands executed;
+audit trail.
+Validation
+successful extraction;
+partial extraction;
+parser failures;
+missing artifacts.
 Coverage
-Collected
-Unsupported
-Not analyzed
+collected;
+unsupported;
+not analyzed.
 Contradictions
-Conflicting evidence
-Timeline inconsistencies
-Incomplete data
+conflicting evidence;
+timeline inconsistencies;
+incomplete data.
 Confidence
-Evidence maturity
-Suspicion scores
-Validation status
+evidence maturity;
+suspicion scores;
+validation state.
 
-This means uncertainty is not added afterward.
+Uncertainty is not added later.
+
 It is preserved as part of the investigation itself.
-Blitz does not attempt to manufacture certainty where evidence does not support it.
+
+Blitz-DFIR does not manufacture certainty where evidence does not support it.
 ```
 
 # Problem #4: Inconsistent and Non-Repeatable Investigations
 ```
-Manual investigations vary between analysts:
+Manual investigations vary between analysts.
 
-Different tools are selected.
-Different commands are executed.
-Different outputs are interpreted.
-Findings may not be reproducible.
+Different people may:
+
+choose different tools;
+execute different commands;
+interpret results differently;
+produce inconsistent reports.
 ```
-Blitz provides:
+## Blitz-DFIR provides:
 ```
 deterministic workflows;
 controlled tool execution;
-typed tool interfaces;
 audit chains;
 checkpointing;
 structured outputs;
 repeatable reports.
 
-The investigation becomes a repeatable process instead of a collection of individual analyst habits.
+The investigation becomes a repeatable process rather than a collection of personal habits.
 
 This improves:
 
 consistency;
 peer review;
-training;
+analyst training;
 reproducibility.
+
+The same evidence and configuration should produce the same results.
 ```
 
 # Problem #5: Tight Coupling to Individual Tools
 ```
-Traditional automation often depends directly on tool-specific formats:
-if "powershell.exe" in chainsaw_output:
+Traditional automation is often tied to specific tools and output formats.
 
 When:
 
-Chainsaw changes,
-Hayabusa is introduced,
-Plaso formats evolve,
+tools change;
+parsers evolve;
+new tools are introduced;
 
-the automation breaks.
+automation breaks.
 ```
-Blitz-DFIR separates investigation logic from tool implementations.
-Tools are adapters.
-Evidence becomes the stable interface.
+## Blitz-DFIR separates investigative reasoning from tool implementations.
 ```
-This means:
-tools can be replaced;
-new tools can be added;
-parser formats can evolve;
-without rewriting the investigation pipeline.
+Tools become adapters.
+
+Evidence becomes the focus.
+
+This allows:
+
+tools to be replaced;
+new tools to be added;
+parsers to evolve;
+
+without rewriting the investigation logic.
+
 The focus shifts from:
 
 "What did this tool output?"
@@ -192,19 +201,54 @@ to:
 
 # Problem #6: Lack of Traceability and Auditability
 ```
-Investigations frequently produce reports without preserving the path that generated them.
+Investigations often produce conclusions without preserving how those conclusions were reached.
 ```
-Blitz records:
+## Blitz records:
 ```
-evidence inventory;
+evidence inventories;
 integrity verification;
 commands executed;
 parser outputs;
-audit logs;
-session state;
 findings;
 reports;
+session states;
+audit logs;
 artifact manifests.
 
-This allows analysts, reviewers, and judges to trace conclusions back to the underlying evidence.
+This enables analysts, reviewers, and judges to trace conclusions back to their supporting evidence.
+
+Every finding should be explainable and traceable.
+```
+
+# Problem #7: Trust Under Uncertainty
+```
+Real investigations are rarely perfect.
+
+Evidence may be:
+
+incomplete;
+corrupted;
+contradictory;
+partially parsed;
+unsupported.
+
+Many systems hide these limitations.
+```
+## Blitz surfaces them.
+```
+It explicitly preserves:
+
+unknowns;
+coverage gaps;
+parser failures;
+contradictions;
+evidence maturity;
+confidence penalties;
+verification results.
+
+The goal is not perfect certainty.
+
+The goal is trustworthy investigations, even when the evidence is incomplete.
+
+Blitz is designed to maintain trust under uncertainty, with humans remaining the final authority.
 ```
