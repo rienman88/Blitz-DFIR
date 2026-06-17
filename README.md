@@ -17,17 +17,23 @@
 | Devpost Blitz DFIR | [`devpost post`](https://devpost.com/software/blitz-dfir?ref_content=user-portfolio&ref_feature=in_progress) |
 
 
-# Blitz DFIR
+# Blitz-DFIR
 
-Blitz DFIR is an evidence-driven investigative analysis pipeline that orchestrates forensic tools, correlates findings, preserves uncertainty, and produces structured reports for digital forensics and incident response.
+Blitz-DFIR is an evidence-driven investigative analysis pipeline for digital forensics and incident response.
 
-In plain words:
+It orchestrates forensic tools, correlates findings across artifacts, preserves uncertainty, and produces repeatable, traceable, and structured investigations.
 
-- SIFT tools do the forensic extraction.
-- Blitz chooses approved tool routes, verifies evidence hashes, records the run, normalizes events, correlates suspicious activity, validates claims, and writes reports.
-- LLM reasoning is optional. Blitz can run fully without an LLM.
-- Raw evidence is referenced in place. The public runner does not copy large raw files into `/cases`.
-- LLM output is treated as explanation only. Findings must come from deterministic tool, parser, normalization, correlation, and validation layers.
+## In plain words
+
+* SIFT tools perform the forensic extraction.
+* Blitz executes approved tool routes, verifies evidence integrity, records provenance, normalizes artifacts, correlates findings, validates claims, and generates structured reports.
+* Raw evidence remains in place. Large evidence files are referenced directly and are not copied into `/cases`.
+* Investigative findings come from deterministic extraction, normalization, correlation, and validation layers.
+* LLM support is optional. Blitz operates fully without an LLM.
+* When enabled, LLMs are used only for bounded explanations and summaries. They are never authoritative and cannot create findings.
+
+**Evidence remains the source of truth. Humans remain the final authority.**
+
 
 | Guides | Location |
 |---|---|
@@ -38,7 +44,7 @@ In plain words:
 | Everything about Blitz DFIR results | [`Files expected to generate after every successful run`](docs/Where%20%20to%20find%20Blitz%20DFIR%20generated%20results.md) |
 | Troubleshooting Guide | [Common Issues](docs/Common%20Issues.md) |
 
-#How It Works
+# How It Works
 
 "Evidence → Tool Routes → Parsing → Normalization → Correlation → Validation → Optional AI Explanation → Reports"
 
