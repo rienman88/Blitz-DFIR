@@ -16,26 +16,6 @@
 | Rocba LLM agent logs | [`submission/rocba_llm_agent_logs`](submission/rocba_llm_agent_logs/) |
 | Devpost Blitz DFIR | [`devpost post`](https://devpost.com/software/blitz-dfir?ref_content=user-portfolio&ref_feature=in_progress) |
 
-#How It Works
-
-"Evidence → Tool Routes → Parsing → Correlation → Validation → Optional AI Explanation → Reports"
-
-1. Provide evidence – memory images, disk images, timelines, and supported forensic artifacts.
-2. Run approved DFIR tools – deterministic workflows execute trusted parsers and record their outputs.
-3. Normalize and correlate findings – events from multiple sources are linked and scored.
-4. Preserve uncertainty – warnings, contradictions, and coverage gaps are retained.
-5. Generate optional AI explanations – AI explains findings but does not determine them.
-6. Produce reports – structured outputs help investigators continue deeper analysis.
-
-| Guides | Location |
-|---|---|
-| Installation and setup of writable Volatility symbol cache | [`Blitz DFIR Installation`](https://github.com/rienman88/Blitz-DFIR/edit/main/README.md) |
-| Ways to run Blitz DFIR | [`How to run Blitz DFIR`](https://github.com/rienman88/Blitz-DFIR/blob/main/docs/Ways%20to%20run%20Blitz%20DFIR.md) |
-| Helpful Commands | [`Commands`](https://github.com/rienman88/Blitz-DFIR/blob/main/docs/Helpful%20commands.md) |
-| LLM Configuration | [LLM](https://github.com/rienman88/Blitz-DFIR/blob/main/docs/LLM%20Configurations.md) |
-| Everything about Blitz DFIR results | [`Files expected to generate after every successful run`](https://github.com/rienman88/Blitz-DFIR/blob/main/docs/Where%20%20to%20find%20Blitz%20DFIR%20generated%20results.md) |
-| Troubleshooting Guide | [Common Issues](https://github.com/rienman88/Blitz-DFIR/blob/main/docs/Common%20Issues.md) |
-
 # Blitz DFIR
 
 Blitz DFIR is an autonomous digital forensics and incident response pipeline for SANS SIFT.
@@ -48,6 +28,32 @@ In plain words:
 - Raw evidence is referenced in place. The public runner does not copy large raw files into `/cases`.
 - LLM output is treated as explanation only. Findings must come from deterministic tool, parser, normalization, correlation, and validation layers.
 
+| Guides | Location |
+|---|---|
+| Installation and setup of writable Volatility symbol cache | [`Blitz DFIR Installation`](https://github.com/rienman88/Blitz-DFIR/edit/main/README.md) |
+| Ways to run Blitz DFIR | [`How to run Blitz DFIR`](https://github.com/rienman88/Blitz-DFIR/blob/main/docs/Ways%20to%20run%20Blitz%20DFIR.md) |
+| Helpful Commands | [`Commands`](https://github.com/rienman88/Blitz-DFIR/blob/main/docs/Helpful%20commands.md) |
+| LLM Configuration | [LLM](https://github.com/rienman88/Blitz-DFIR/blob/main/docs/LLM%20Configurations.md) |
+| Everything about Blitz DFIR results | [`Files expected to generate after every successful run`](https://github.com/rienman88/Blitz-DFIR/blob/main/docs/Where%20%20to%20find%20Blitz%20DFIR%20generated%20results.md) |
+| Troubleshooting Guide | [Common Issues](https://github.com/rienman88/Blitz-DFIR/blob/main/docs/Common%20Issues.md) |
+
+#How It Works
+
+"Evidence → Tool Routes → Parsing → Normalization → Correlation → Validation → Optional AI Explanation → Reports"
+
+1. Provide evidence – Supply memory images, disk images, timelines, or supported forensic artifacts. Evidence remains the source of truth throughout the workflow.
+
+2. Execute approved analysis routes – Blitz orchestrates deterministic DFIR tools and parsers, verifies evidence integrity, and records execution details for auditability and reproducibility.
+
+3. Parse and normalize artifacts – Outputs from multiple sources are transformed into a common representation to enable cross-artifact analysis and correlation.
+
+4. Correlate and score findings – Related events are linked across artifacts to identify suspicious activity and generate evidence-backed findings.
+
+5. Preserve uncertainty and validate claims – Parser limitations, warnings, contradictions, and coverage gaps are retained to prevent overstating confidence and to support transparent analysis.
+
+6. Generate optional AI explanations – When enabled, AI summarizes and explains evidence-backed findings. AI does not create evidence, determine conclusions, or modify findings.
+
+7. Produce structured reports – Blitz generates reports and investigation artifacts that help analysts continue deeper forensic analysis and incident response activities.
 ## Safest Testing Order
 
 Use this order for demos, judging, and client testing:
