@@ -24,7 +24,7 @@ normalizing findings;
 correlating evidence into a unified investigative picture.
 ```
 
-#Problem #2: Loss of Context Between Artifacts
+# Problem #2: Loss of Context Between Artifacts
 ```
 Traditional workflows often leave analysts with:
 
