@@ -18,7 +18,7 @@
 
 # Blitz DFIR
 
-Blitz DFIR is an autonomous digital forensics and incident response pipeline for SANS SIFT.
+Blitz DFIR is an evidence-driven investigative analysis pipeline that orchestrates forensic tools, correlates findings, preserves uncertainty, and produces structured reports for digital forensics and incident response.
 
 In plain words:
 
