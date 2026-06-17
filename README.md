@@ -6,7 +6,6 @@
 |---|---|
 | Public repository | [`github.com/rienman88/Blitz-DFIR`](https://github.com/rienman88/Blitz-DFIR) |
 | License | [`LICENSE`](LICENSE) (Apache 2.0) |
-| Why use Blitz-DFIR? | [`What problem/s does Blitz-DFIR solve?`](docs/Why%20use%20Blitz%20DFIR.md) |
 | Demonstration video | [YouTube — Blitz DFIR Demo 2026](https://www.youtube.com/watch?v=KVRA7pNhdnU&t=93s) |
 | Architecture diagrams | ![Blitz DFIR Architecture](docs/blitz_dfir_architecture.svg) |
 | Datasets | [`Combined run of Rocba Memory and E01`] |
@@ -15,13 +14,16 @@
 | Run summary | [`RUN_SUMMARY_COMPACT.json`](submission/packet/02_RUN_SUMMARY_COMPACT.json) |
 | Rocba LLM agent logs | [`submission/rocba_llm_agent_logs`](submission/rocba_llm_agent_logs/) |
 | Devpost Blitz DFIR | [`devpost post`](https://devpost.com/software/blitz-dfir?ref_content=user-portfolio&ref_feature=in_progress) |
-
+| Why use Blitz-DFIR? | [`What problem/s does Blitz-DFIR solve?`](docs/Why%20use%20Blitz%20DFIR.md) |
 
 # Blitz-DFIR
+> Transforming fragmented evidence into trusted investigations.
 
-Blitz-DFIR is an evidence-driven investigative analysis pipeline for digital forensics and incident response.
+Evidence-driven investigative analysis pipeline for digital forensics and incident response.
 
-It orchestrates forensic tools, correlates findings across artifacts, preserves uncertainty, and produces repeatable, traceable, and structured investigations.
+Blitz-DFIR correlates evidence across artifacts, preserves uncertainty, and produces repeatable, traceable investigations—not just reports.
+
+## Evidence remains the source of truth. Humans remain the final authority.
 
 ## In plain words
 
@@ -31,9 +33,6 @@ It orchestrates forensic tools, correlates findings across artifacts, preserves 
 * Investigative findings come from deterministic extraction, normalization, correlation, and validation layers.
 * LLM support is optional. Blitz operates fully without an LLM.
 * When enabled, LLMs are used only for bounded explanations and summaries. They are never authoritative and cannot create findings.
-
-**Evidence remains the source of truth. Humans remain the final authority.**
-
 
 | Guides | Location |
 |---|---|
