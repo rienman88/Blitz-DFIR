@@ -30,7 +30,7 @@ In plain words:
 
 | Guides | Location |
 |---|---|
-| Installation and setup of writable Volatility symbol cache | [`Blitz DFIR Installation`](https://github.com/rienman88/Blitz-DFIR/edit/main/README.md) |
+| Installation and setup of writable Volatility symbol cache | [`Blitz DFIR Installation`](## Download And Install) |
 | Ways to run Blitz DFIR | [`How to run Blitz DFIR`](https://github.com/rienman88/Blitz-DFIR/blob/main/docs/Ways%20to%20run%20Blitz%20DFIR.md) |
 | Helpful Commands | [`Commands`](https://github.com/rienman88/Blitz-DFIR/blob/main/docs/Helpful%20commands.md) |
 | LLM Configuration | [LLM](https://github.com/rienman88/Blitz-DFIR/blob/main/docs/LLM%20Configurations.md) |
