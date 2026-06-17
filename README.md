@@ -8,7 +8,7 @@
 | License | [`LICENSE`](LICENSE) (Apache 2.0) |
 | Feature description | [Overview](#overview) |
 | Demonstration video | [YouTube — Blitz DFIR Demo 2026](https://www.youtube.com/watch?v=KVRA7pNhdnU&t=93s) |
-| Architecture diagrams | [`Architecture.md`](https://github.com/rienman88/Blitz-DFIR/blob/main/docs/Architecture%20And%20MCP%20Commands.md)
+| Architecture diagrams | ![Blitz DFIR Architecture](docs/blitz_dfir_architecture.svg) |
 | Datasets | [`Combined run of Rocba Memory and E01`] |
 | Blitz-DFIR-Results | [`findings, audit, reports`](https://github.com/rienman88/Blitz-DFIR-Results/tree/main) |
 | Investigation conclusion | [`INVESTIGATION_CONCLUSION.md`](submission/packet/01_INVESTIGATION_CONCLUSION.md) |
