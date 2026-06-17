@@ -16,6 +16,17 @@
 | Rocba LLM agent logs | [`submission/rocba_llm_agent_logs`](submission/rocba_llm_agent_logs/) |
 | Devpost Blitz DFIR | [`devpost post`](https://devpost.com/software/blitz-dfir?ref_content=user-portfolio&ref_feature=in_progress) |
 
+#How It Works
+
+"Evidence → Tool Routes → Parsing → Correlation → Validation → Optional AI Explanation → Reports"
+
+1. Provide evidence – memory images, disk images, timelines, and supported forensic artifacts.
+2. Run approved DFIR tools – deterministic workflows execute trusted parsers and record their outputs.
+3. Normalize and correlate findings – events from multiple sources are linked and scored.
+4. Preserve uncertainty – warnings, contradictions, and coverage gaps are retained.
+5. Generate optional AI explanations – AI explains findings but does not determine them.
+6. Produce reports – structured outputs help investigators continue deeper analysis.
+
 | Guides | Location |
 |---|---|
 | Installation and setup of writable Volatility symbol cache | [`Blitz DFIR Installation`](https://github.com/rienman88/Blitz-DFIR/edit/main/README.md) |
