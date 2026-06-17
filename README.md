@@ -11,7 +11,7 @@
 | Datasets | [`Combined run of Rocba Memory and E01`] |
 | Blitz-DFIR-Results | [`findings, audit, reports`](https://github.com/rienman88/Blitz-DFIR-Results/tree/main) |
 | Investigation conclusion | [`INVESTIGATION_CONCLUSION`](submission/packet/01_INVESTIGATION_CONCLUSION.md) |
-| Run summary | [`RUN_SUMMARY_COMPACT`](submission/packet/02_RUN_SUMMARY_COMPACT.json) |
+| Run summary | [`RUN_SUMMARY_COMPACT.json`](submission/packet/02_RUN_SUMMARY_COMPACT.json) |
 | Rocba LLM agent logs | [`submission/rocba_llm_agent_logs`](submission/rocba_llm_agent_logs/) |
 | Devpost Blitz DFIR | [`devpost post`](https://devpost.com/software/blitz-dfir?ref_content=user-portfolio&ref_feature=in_progress) |
 
@@ -29,12 +29,12 @@ In plain words:
 
 | Guides | Location |
 |---|---|
-| Installation and setup of writable Volatility symbol cache | [`This Document`] |
-| Ways to run Blitz DFIR | [`How to run Blitz DFIR`](docs/Ways_to_run_Blitz_DFIR.md) |
+| Installation and setup of writable Volatility symbol cache | [`This Document`](#download-and-install) |
+| Ways to run Blitz DFIR | [`How to run Blitz DFIR`](docs/Ways%20to%20run%20Blitz%20DFIR.md) |
 | Helpful Commands | [`Commands`](docs/Helpful%20commands.md) |
 | LLM Configuration | [LLM](docs/LLM%20Configurations.md) |
-| Everything about Blitz DFIR results | [`Files expected to generate after every successful run`](docs/Where_to_find_Blitz_DFIR_generated_results.md) |
-| Troubleshooting Guide | [Common Issues](https://github.com/rienman88/Blitz-DFIR/blob/main/docs/Common%20Issues.md) |
+| Everything about Blitz DFIR results | [`Files expected to generate after every successful run`](docs/Where%20%20to%20find%20Blitz%20DFIR%20generated%20results.md) |
+| Troubleshooting Guide | [Common Issues](docs/Common%20Issues.md) |
 
 #How It Works
 
