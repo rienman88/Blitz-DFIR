@@ -29,6 +29,7 @@ In plain words:
 
 | Guides | Location |
 |---|---|
+| Why use Blitz-DFIR? | [`What problem/s does Blitz-DFIR solve?`](docs/Why%20use%20Blitz%20DFIR.md) |
 | Installation and setup of writable Volatility symbol cache | [`This Document`](#download-and-install) |
 | Ways to run Blitz DFIR | [`How to run Blitz DFIR`](docs/Ways%20to%20run%20Blitz%20DFIR.md) |
 | Helpful Commands | [`Commands`](docs/Helpful%20commands.md) |
