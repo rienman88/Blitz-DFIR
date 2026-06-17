@@ -2,14 +2,21 @@ Because forensic tools speak different languages. Blitz-DFIR transforms their ou
 
 # Problem #1: Fragmented Evidence
 ```
-People may think that Blitz-DFIR is just a simple:
 Tool A
 Tool B
 Tool C
-↓
+    ↓
 Glue outputs together
+
+Traditional DFIR workflows often produce:
+
+isolated artifacts;
+different output formats;
+disconnected timelines;
+manual correlation;
+analyst-specific interpretations.
 ```
-What Blitz-DFIR actually is:
+Blitz-DFIR is not a tool wrapper. It provides an evidence-driven investigation pipeline:
 ```
 Evidence
     ↓
@@ -26,31 +33,6 @@ Validation and Uncertainty Preservation
 Structured Reports and Audit Trail
     ↓
 Human Decision
-```
-
-# Problem #2: Fragmented Investigations and Loss of Context
-```
-Traditional DFIR tools excel at extracting artifacts, but they produce isolated outputs:
-
-Volatility finds memory artifacts.
-Plaso builds timelines.
-Chainsaw identifies suspicious events.
-Browser artifacts reveal downloads.
-YARA matches malware signatures.
-
-The analyst is responsible for mentally connecting everything.
-```
-Blitz transforms tool outputs into a common evidence model and correlates them into an investigation:
-```
-Evidence
-    ↓
-Normalization
-    ↓
-Correlation
-    ↓
-Timeline and Findings
-    ↓
-Structured Investigation
 
 Instead of reasoning over:
 
@@ -59,9 +41,55 @@ CSV files
 JSON blobs
 XML outputs
 
-Blitz reasons over evidence objects and relationships.
+Blitz reasons over normalized evidence and relationships.
+The value is not running tools.
+The value is transforming fragmented artifacts into a structured, evidence-driven investigation.
+```
 
-This allows context to survive across artifacts and produces investigation-centric results rather than disconnected tool outputs.
+# Problem #2: Fragmented Investigations and Loss of Context
+```
+Problem #2: Loss of Context Across Artifacts
+
+Traditional DFIR tools are excellent at extracting individual artifacts:
+
+Volatility reveals memory artifacts.
+Plaso reconstructs timelines.
+Chainsaw detects suspicious events.
+Browser artifacts show downloads.
+YARA identifies malware indicators.
+
+However, each tool provides only part of the story.
+
+The analyst is responsible for manually connecting:
+
+Suspicious PowerShell execution
++
+Downloaded payload
++
+Memory-resident process
++
+Network activity
++
+Timeline events
+
+This correlation is often performed mentally, making investigations:
+time-consuming;
+analyst-dependent;
+difficult to reproduce;
+prone to missed relationships.
+```
+Blitz-DFIR transforms extracted artifacts into a common evidence model and correlates them into an investigation
+```
+This enables:
+
+cross-artifact correlation;
+timeline reconstruction;
+suspicion scoring;
+attack-stage context;
+contradiction analysis;
+structured findings.
+
+The result is an investigation-centric workflow, where evidence is analyzed as a connected story rather than as isolated tool outputs.
 ```
 
 # Problem #3: False Certainty and Hidden Unknowns
