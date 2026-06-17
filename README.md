@@ -31,10 +31,10 @@ In plain words:
 |---|---|
 | Installation and setup of writable Volatility symbol cache | [`This Document`] |
 | Ways to run Blitz DFIR | [`How to run Blitz DFIR`](docs/Ways_to_run_Blitz_DFIR.md) |
-| Helpful Commands | [`Commands`](docs/Helpful_commands.md) |
-| LLM Configuration | [LLM](docs/LLM_Configurations.md) |
+| Helpful Commands | [`Commands`](docs/Helpful%20commands.md) |
+| LLM Configuration | [LLM](docs/LLM%20Configurations.md) |
 | Everything about Blitz DFIR results | [`Files expected to generate after every successful run`](docs/Where_to_find_Blitz_DFIR_generated_results.md) |
-| Troubleshooting Guide | [Common Issues](docs/Common Issues.md) |
+| Troubleshooting Guide | [Common Issues](https://github.com/rienman88/Blitz-DFIR/blob/main/docs/Common%20Issues.md) |
 
 #How It Works
 
