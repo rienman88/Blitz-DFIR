@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2700" viewBox="0 0 1600 2700">
+<defs>
+  <marker id="ah" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#4a5568"/></marker>
+  <marker id="ahd" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#9ca3af"/></marker>
+</defs>
+<rect width="1600" height="2700" fill="white"/>
+<text x="800" y="38" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#1a1a3e" text-anchor="middle" font-weight="bold">Blitz DFIR — Architecture Overview</text>
+<text x="800" y="62" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#6677aa" text-anchor="middle">Evidence-grade autonomous DFIR pipeline · strict LLM boundary discipline</text>
+<rect x="494" y="168" width="612" height="675" rx="12" ry="12" fill="#eef4ff" stroke="#1e4d8c" stroke-width="2.2"/>
+<rect x="506" y="167" width="182" height="20" rx="5" ry="5" fill="#1e4d8c"/>
+<text x="597" y="177" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="white" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Blitz control boundary</text>
+<rect x="15" y="902" width="280" height="126" rx="12" ry="12" fill="#f5f5f5" stroke="#666666" stroke-width="2.2"/>
+<rect x="27" y="901" width="217" height="20" rx="5" ry="5" fill="#666666"/>
+<text x="135" y="911" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="white" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Read-only evidence boundary</text>
+<rect x="370" y="902" width="972" height="108" rx="12" ry="12" fill="#fff8ec" stroke="#8c6020" stroke-width="2.2"/>
+<rect x="382" y="901" width="224" height="20" rx="5" ry="5" fill="#8c6020"/>
+<text x="494" y="911" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="white" text-anchor="middle" dominant-baseline="middle" font-weight="bold">SIFT tool execution boundary</text>
+<rect x="519" y="1161" width="562" height="626" rx="12" ry="12" fill="#edfbf0" stroke="#1a6b40" stroke-width="2.2"/>
+<rect x="531" y="1160" width="308" height="20" rx="5" ry="5" fill="#1a6b40"/>
+<text x="685" y="1170" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="white" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Analysis and evidence reasoning boundary</text>
+<rect x="1058" y="1827" width="424" height="318" rx="12" ry="12" fill="#f8f0ff" stroke="#6620aa" stroke-width="2.2"/>
+<rect x="1070" y="1826" width="259" height="20" rx="5" ry="5" fill="#6620aa"/>
+<text x="1199" y="1836" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="white" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Optional LLM explanation boundary</text>
+<rect x="20" y="2350" width="1405" height="140" rx="12" ry="12" fill="#f4f4f4" stroke="#555555" stroke-width="2.2"/>
+<rect x="32" y="2349" width="203" height="20" rx="5" ry="5" fill="#555555"/>
+<text x="133" y="2359" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="white" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Output and audit boundary</text>
+<line x1="800" y1="136" x2="800" y2="194" stroke="#4a5568" stroke-width="1.8" marker-end="url(#ah)"/>
+<line x1="800" y1="250" x2="800" y2="311" stroke="#4a5568" stroke-width="1.8" marker-end="url(#ah)"/>
+<line x1="800" y1="365" x2="800" y2="421" stroke="#4a5568" stroke-width="1.8" marker-end="url(#ah)"/>
+<line x1="800" y1="475" x2="800" y2="531" stroke="#4a5568" stroke-width="1.8" marker-end="url(#ah)"/>
+<line x1="800" y1="585" x2="800" y2="641" stroke="#4a5568" stroke-width="1.8" marker-end="url(#ah)"/>
+<line x1="800" y1="695" x2="800" y2="759" stroke="#4a5568" stroke-width="1.8" marker-end="url(#ah)"/>
+<path d="M 800 817 L 800 853 L 155 853 L 155 922" stroke="#4a5568" stroke-width="1.8" marker-end="url(#ah)" fill="none"/>
+<path d="M 800 817 L 800 853 L 490 853 L 490 929" stroke="#4a5568" stroke-width="1.8" marker-end="url(#ah)" fill="none"/>
+<path d="M 800 817 L 800 853 L 730 853 L 730 929" stroke="#4a5568" stroke-width="1.8" marker-end="url(#ah)" fill="none"/>
+<path d="M 800 817 L 800 853 L 975 853 L 975 929" stroke="#4a5568" stroke-width="1.8" marker-end="url(#ah)" fill="none"/>
+<path d="M 800 817 L 800 853 L 1215 853 L 1215 922" stroke="#4a5568" stroke-width="1.8" marker-end="url(#ah)" fill="none"/>
+<line x1="275" y1="965" x2="390" y2="956" stroke="#9ca3af" stroke-width="1.4" stroke-dasharray="9,5" marker-end="url(#ahd)"/>
+<line x1="275" y1="965" x2="625" y2="956" stroke="#9ca3af" stroke-width="1.4" stroke-dasharray="9,5" marker-end="url(#ahd)"/>
+<line x1="275" y1="965" x2="868" y2="956" stroke="#9ca3af" stroke-width="1.4" stroke-dasharray="9,5" marker-end="url(#ahd)"/>
+<line x1="275" y1="965" x2="1108" y2="956" stroke="#9ca3af" stroke-width="1.4" stroke-dasharray="9,5" marker-end="url(#ahd)"/>
+<line x1="490" y1="983" x2="800" y2="1074" stroke="#4a5568" stroke-width="1.8" marker-end="url(#ah)"/>
+<line x1="730" y1="983" x2="800" y2="1074" stroke="#4a5568" stroke-width="1.8" marker-end="url(#ah)"/>
+<line x1="975" y1="983" x2="800" y2="1074" stroke="#4a5568" stroke-width="1.8" marker-end="url(#ah)"/>
+<line x1="1215" y1="990" x2="800" y2="1074" stroke="#4a5568" stroke-width="1.8" marker-end="url(#ah)"/>
+<line x1="800" y1="1126" x2="800" y2="1187" stroke="#4a5568" stroke-width="1.8" marker-end="url(#ah)"/>
+<line x1="800" y1="1243" x2="800" y2="1299" stroke="#4a5568" stroke-width="1.8" marker-end="url(#ah)"/>
+<line x1="800" y1="1351" x2="800" y2="1399" stroke="#4a5568" stroke-width="1.8" marker-end="url(#ah)"/>
+<line x1="800" y1="1451" x2="800" y2="1497" stroke="#4a5568" stroke-width="1.8" marker-end="url(#ah)"/>
+<line x1="800" y1="1553" x2="800" y2="1607" stroke="#4a5568" stroke-width="1.8" marker-end="url(#ah)"/>
+<line x1="800" y1="1663" x2="800" y2="1709" stroke="#4a5568" stroke-width="1.8" marker-end="url(#ah)"/>
+<path d="M 980 1735 L 1095 1735 L 1095 1875" stroke="#4a5568" stroke-width="1.8" marker-end="url(#ah)" fill="none"/>
+<line x1="1270" y1="1901" x2="1270" y2="1957" stroke="#4a5568" stroke-width="1.8" marker-end="url(#ah)"/>
+<line x1="1270" y1="2013" x2="1270" y2="2067" stroke="#4a5568" stroke-width="1.8" marker-end="url(#ah)"/>
+<line x1="800" y1="1761" x2="800" y2="2224" stroke="#4a5568" stroke-width="1.8" marker-end="url(#ah)"/>
+<path d="M 1270 2123 L 1270 2206 L 800 2206 L 800 2224" stroke="#4a5568" stroke-width="1.8" marker-end="url(#ah)" fill="none"/>
+<line x1="800" y1="2276" x2="175" y2="2370" stroke="#4a5568" stroke-width="1.8" marker-end="url(#ah)"/>
+<line x1="800" y1="2276" x2="530" y2="2370" stroke="#4a5568" stroke-width="1.8" marker-end="url(#ah)"/>
+<line x1="800" y1="2276" x2="885" y2="2370" stroke="#4a5568" stroke-width="1.8" marker-end="url(#ah)"/>
+<line x1="800" y1="2276" x2="1270" y2="2370" stroke="#4a5568" stroke-width="1.8" marker-end="url(#ah)"/>
+<line x1="175" y1="2470" x2="800" y2="2614" stroke="#4a5568" stroke-width="1.8" marker-end="url(#ah)"/>
+<line x1="530" y1="2470" x2="800" y2="2614" stroke="#4a5568" stroke-width="1.8" marker-end="url(#ah)"/>
+<line x1="885" y1="2470" x2="800" y2="2614" stroke="#4a5568" stroke-width="1.8" marker-end="url(#ah)"/>
+<line x1="1270" y1="2470" x2="800" y2="2614" stroke="#4a5568" stroke-width="1.8" marker-end="url(#ah)"/>
+<text x="335" y="944" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#9ca3af" text-anchor="middle" font-style="italic">read-only input</text>
+<rect x="610" y="84" width="380" height="52" rx="9" ry="9" fill="#d8eaff" stroke="#2255aa" stroke-width="1.7"/>
+<text x="800" y="110.0" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#0a1a3a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Analyst, judge, or MCP client</text>
+<rect x="590" y="194" width="420" height="56" rx="9" ry="9" fill="#c2d8ff" stroke="#1e4d8c" stroke-width="1.7"/>
+<text x="800" y="215.5" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#0d1f3c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Blitz entrypoint</text>
+<text x="800" y="228.5" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#4a5a7a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">CLI analyze or MCP server</text>
+<rect x="535" y="311" width="530" height="54" rx="9" ry="9" fill="#cde0ff" stroke="#1e4d8c" stroke-width="1.7"/>
+<text x="800" y="331.5" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#0d1f3c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Manifest loading</text>
+<text x="800" y="344.5" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#4a5a7a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">case_id · evidence_root · output_root · evidence list</text>
+<rect x="525" y="421" width="550" height="54" rx="9" ry="9" fill="#cde0ff" stroke="#1e4d8c" stroke-width="1.7"/>
+<text x="800" y="441.5" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#0d1f3c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Evidence integrity check</text>
+<text x="800" y="454.5" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#4a5a7a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">path validation · type validation · SHA256 verification</text>
+<rect x="565" y="531" width="470" height="54" rx="9" ry="9" fill="#cde0ff" stroke="#1e4d8c" stroke-width="1.7"/>
+<text x="800" y="551.5" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#0d1f3c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Case session creation</text>
+<text x="800" y="564.5" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#4a5a7a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">audit chain · progress state · session state</text>
+<rect x="565" y="641" width="470" height="54" rx="9" ry="9" fill="#cde0ff" stroke="#1e4d8c" stroke-width="1.7"/>
+<text x="800" y="661.5" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#0d1f3c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Investigation planning</text>
+<text x="800" y="674.5" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#4a5a7a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">case objective · batch plan · evidence triage</text>
+<rect x="520" y="759" width="560" height="58" rx="9" ry="9" fill="#cde0ff" stroke="#1e4d8c" stroke-width="1.7"/>
+<text x="800" y="781.5" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#0d1f3c" text-anchor="middle" dominant-baseline="middle" font-weight="bold">SafeToolAdapter routing</text>
+<text x="800" y="794.5" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#4a5a7a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">typed tools only · allowlisted commands · controlled output paths</text>
+<rect x="35" y="922" width="240" height="86" rx="9" ry="9" fill="#e8e8e8" stroke="#666666" stroke-width="1.7"/>
+<text x="155" y="953.0" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#333333" text-anchor="middle" dominant-baseline="middle" font-weight="bold">User-selected raw evidence</text>
+<text x="155" y="965.0" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#4a5a7a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">external absolute paths</text>
+<text x="155" y="977.0" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#4a5a7a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">no raw copy required</text>
+<rect x="390" y="929" width="200" height="54" rx="9" ry="9" fill="#ffeec8" stroke="#8c6020" stroke-width="1.7"/>
+<text x="490" y="949.5" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#3d2c0e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Volatility</text>
+<text x="490" y="962.5" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#4a5a7a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">memory plugins</text>
+<rect x="625" y="929" width="210" height="54" rx="9" ry="9" fill="#ffeec8" stroke="#8c6020" stroke-width="1.7"/>
+<text x="730" y="949.5" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#3d2c0e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">log2timeline + psort</text>
+<text x="730" y="962.5" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#4a5a7a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">E01 · DD · Plaso · Windows artifacts</text>
+<rect x="868" y="929" width="215" height="54" rx="9" ry="9" fill="#ffeec8" stroke="#8c6020" stroke-width="1.7"/>
+<text x="975" y="949.5" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#3d2c0e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">disk_triage fallback</text>
+<text x="975" y="962.5" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#4a5a7a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Sleuth Kit mmls + fls</text>
+<rect x="1108" y="922" width="215" height="68" rx="9" ry="9" fill="#ffeec8" stroke="#8c6020" stroke-width="1.7"/>
+<text x="1215" y="949.5" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#3d2c0e" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Optional tools</text>
+<text x="1215" y="962.5" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#4a5a7a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">chainsaw · tshark · yara · strings</text>
+<rect x="645" y="1074" width="310" height="52" rx="9" ry="9" fill="#d8f5e4" stroke="#1a6b40" stroke-width="1.7"/>
+<text x="800" y="1100.0" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#0b3320" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Parser result extraction</text>
+<rect x="545" y="1187" width="510" height="56" rx="9" ry="9" fill="#d0f2de" stroke="#1a6b40" stroke-width="1.7"/>
+<text x="800" y="1208.5" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#0b3320" text-anchor="middle" dominant-baseline="middle" font-weight="bold">SQLite-backed normalization</text>
+<text x="800" y="1221.5" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#4a5a7a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">batch import · checkpointing · event store</text>
+<rect x="600" y="1299" width="400" height="52" rx="9" ry="9" fill="#d0f2de" stroke="#1a6b40" stroke-width="1.7"/>
+<text x="800" y="1325.0" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#0b3320" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Object inventory and full accounting</text>
+<rect x="610" y="1399" width="380" height="52" rx="9" ry="9" fill="#d0f2de" stroke="#1a6b40" stroke-width="1.7"/>
+<text x="800" y="1425.0" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#0b3320" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Correlation and suspicion scoring</text>
+<rect x="565" y="1497" width="470" height="56" rx="9" ry="9" fill="#d0f2de" stroke="#1a6b40" stroke-width="1.7"/>
+<text x="800" y="1518.5" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#0b3320" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Investigation guidance</text>
+<text x="800" y="1531.5" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#4a5a7a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">temporal gaps · attack-stage timeline</text>
+<rect x="565" y="1607" width="470" height="56" rx="9" ry="9" fill="#d0f2de" stroke="#1a6b40" stroke-width="1.7"/>
+<text x="800" y="1628.5" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#0b3320" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Evidentiary weighting</text>
+<text x="800" y="1641.5" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#4a5a7a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">contradiction analysis · evidence maturity</text>
+<rect x="620" y="1709" width="360" height="52" rx="9" ry="9" fill="#d0f2de" stroke="#1a6b40" stroke-width="1.7"/>
+<text x="800" y="1735.0" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#0b3320" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Validation, unknowns, and coverage</text>
+<rect x="1095" y="1849" width="350" height="52" rx="9" ry="9" fill="#eeddf8" stroke="#6620aa" stroke-width="1.7"/>
+<text x="1270" y="1875.0" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#2b1244" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Bounded evidence summaries only</text>
+<rect x="1080" y="1957" width="380" height="56" rx="9" ry="9" fill="#eeddf8" stroke="#6620aa" stroke-width="1.7"/>
+<text x="1270" y="1978.5" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#2b1244" text-anchor="middle" dominant-baseline="middle" font-weight="bold">OpenAI-compatible LLM</text>
+<text x="1270" y="1991.5" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#4a5a7a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">Ollama or provider endpoint</text>
+<rect x="1080" y="2067" width="380" height="56" rx="9" ry="9" fill="#eeddf8" stroke="#6620aa" stroke-width="1.7"/>
+<text x="1270" y="2088.5" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#2b1244" text-anchor="middle" dominant-baseline="middle" font-weight="bold">LLM report verification</text>
+<text x="1270" y="2101.5" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#4a5a7a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">unsupported-claim checks</text>
+<rect x="655" y="2224" width="290" height="52" rx="9" ry="9" fill="#e0e0e0" stroke="#444444" stroke-width="1.7"/>
+<text x="800" y="2250.0" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Report generation</text>
+<rect x="40" y="2370" width="270" height="100" rx="9" ry="9" fill="#e8e8e8" stroke="#555555" stroke-width="1.7"/>
+<text x="175" y="2408.0" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#333333" text-anchor="middle" dominant-baseline="middle" font-weight="bold">reports/</text>
+<text x="175" y="2420.0" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#4a5a7a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">HTML · Markdown · JSON</text>
+<text x="175" y="2432.0" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#4a5a7a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">overall reports · agent journal</text>
+<rect x="395" y="2370" width="270" height="100" rx="9" ry="9" fill="#e8e8e8" stroke="#555555" stroke-width="1.7"/>
+<text x="530" y="2408.0" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#333333" text-anchor="middle" dominant-baseline="middle" font-weight="bold">findings/</text>
+<text x="530" y="2420.0" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#4a5a7a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">overall findings · event_store.sqlite</text>
+<text x="530" y="2432.0" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#4a5a7a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">validation · coverage · unknowns</text>
+<rect x="750" y="2370" width="270" height="100" rx="9" ry="9" fill="#e8e8e8" stroke="#555555" stroke-width="1.7"/>
+<text x="885" y="2408.0" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#333333" text-anchor="middle" dominant-baseline="middle" font-weight="bold">audit/</text>
+<text x="885" y="2420.0" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#4a5a7a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">progress.json · session_state.json</text>
+<text x="885" y="2432.0" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#4a5a7a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">ndjson audit log · collated audit</text>
+<rect x="1135" y="2370" width="270" height="100" rx="9" ry="9" fill="#e8e8e8" stroke="#555555" stroke-width="1.7"/>
+<text x="1270" y="2408.0" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#333333" text-anchor="middle" dominant-baseline="middle" font-weight="bold">artifact_manifest.json</text>
+<text x="1270" y="2420.0" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#4a5a7a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">output hashes</text>
+<text x="1270" y="2432.0" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#4a5a7a" text-anchor="middle" dominant-baseline="middle" font-weight="normal">artifact inventory</text>
+<rect x="640" y="2614" width="320" height="52" rx="9" ry="9" fill="#d8eaff" stroke="#2255aa" stroke-width="1.7"/>
+<text x="800" y="2640.0" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#0a1a3a" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Judge or analyst review</text>
+</svg>
