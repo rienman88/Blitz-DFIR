@@ -42,6 +42,7 @@ Blitz DFIR is not attempting to replace investigators or turn incident response 
 |---|---|
 | Installation and setup of writable Volatility symbol cache | [`This Document`](#download-and-install) |
 | Ways to run Blitz DFIR | [`How to run Blitz DFIR`](docs/Ways%20to%20run%20Blitz%20DFIR.md) |
+| Video Tutorial to run Blitz DFIR | [`Youtube`](https://m.youtube.com/watch?v=Nuo3iayw50E&t=13s&pp=2AENkAIB0gcJCUACo7VqN5tD) |
 | Helpful Commands | [`Commands`](docs/Helpful%20commands.md) |
 | LLM Configuration | [LLM](docs/LLM%20Configurations.md) |
 | Everything about Blitz DFIR results | [`Files expected to generate after every successful run`](docs/Where%20%20to%20find%20Blitz%20DFIR%20generated%20results.md) |
