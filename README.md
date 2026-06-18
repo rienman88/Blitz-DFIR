@@ -15,6 +15,7 @@
 | Rocba LLM agent logs | [`submission/rocba_llm_agent_logs`](submission/rocba_llm_agent_logs/) |
 | Devpost Blitz DFIR | [`devpost post`](https://devpost.com/software/blitz-dfir?ref_content=user-portfolio&ref_feature=in_progress) |
 | Why use Blitz-DFIR? | [`What problem/s does Blitz-DFIR solve?`](docs/Why%20use%20Blitz%20DFIR.md) |
+| What's Next for Blitz DFIR | [`Where is Blitz DFIR headed?`](docs/What's%20Next%20for%20Blitz%20DFIR.md) |
 
 # Blitz-DFIR
 > Transforming fragmented evidence into trusted investigations.
