@@ -25,6 +25,8 @@ Blitz-DFIR correlates evidence across artifacts, preserves uncertainty, and prod
 
 ## Evidence remains the source of truth. Humans remain the final authority.
 
+Blitz DFIR addresses AI hallucination through architecture rather than trust. Evidence, deterministic processing, correlation, and validation establish the findings; AI is an optional explanatory layer and is never treated as the source of truth.
+
 ## In plain words
 
 * SIFT tools perform the forensic extraction.
@@ -33,6 +35,8 @@ Blitz-DFIR correlates evidence across artifacts, preserves uncertainty, and prod
 * Investigative findings come from deterministic extraction, normalization, correlation, and validation layers.
 * LLM support is optional. Blitz operates fully without an LLM.
 * When enabled, LLMs are used only for bounded explanations and summaries. They are never authoritative and cannot create findings.
+
+Blitz DFIR is not attempting to replace investigators or turn incident response into an autonomous AI problem. Instead, it treats AI as an optional explanatory layer on top of deterministic evidence processing and correlation, while preserving uncertainty and operating within constrained environments.
 
 | Guides | Location |
 |---|---|
